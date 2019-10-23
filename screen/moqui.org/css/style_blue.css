@@ -8735,7 +8735,7 @@ a.custom-tooltip:hover {
   }
   .main-nav.fixed-pos {
     position: fixed;
-    top: 0;
+    /* top: 0; */
     right: 0;
     left: 0;
     z-index: 1000;
@@ -8748,7 +8748,7 @@ a.custom-tooltip:hover {
     -o-transform: translatez(0);
     -ms-transform: translatez(0);
     transform: translatez(0);
-  }
+  } 
   .top-scroll {
     right: 5%;
     bottom: 55px;

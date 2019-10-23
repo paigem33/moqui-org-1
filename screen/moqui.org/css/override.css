@@ -36,8 +36,9 @@ ul#navigation a:hover, ul#navigation .active-item > a { color: #5ba5eb; }
 /* better handle moqui logo image */
 .moqui-logo { margin-top: 0px; height: 40px; }
 @media (min-width: 768px) {
-  .presentation { height: 35px; background: #212c43; }
-  .main-nav.fixed-pos { top: 0px; }
+  /* TODO: figure out the needed height at smaller screens, adjust this height value accordingly + add media query correcting it at larger screens  */
+  .presentation { height: 41px; background: #212c43; }
+  /* .main-nav.fixed-pos { top: 0px; } */
   .top-info { margin-top: 73px; }
   .circle-info__title { font-size: 26px; }
   .circle-button__title { font-size: 26px; }
@@ -101,3 +102,140 @@ nav.form-list-nav>span.select2-container { float: left; margin: 6px 0 6px 0; min
 h1:target, h2:target, h3:target { display: inline-block; padding-top: 108px; margin-top: -60px; }
 /* fix default nowrap in jstree */
 .jstree-default .jstree-anchor { white-space: normal; height: auto; }
+
+/* --- Style changes --- */
+
+/* HEADER */
+
+/* Logo */
+
+.logo-img {
+  padding: 0;
+  margin: 0;
+  height: 48px;
+  width: 48px;
+}
+
+/* End logo */
+
+/* Top nav */
+.top-info {
+  margin-top: 0;
+  position: fixed;
+  padding: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #0c306c;
+  height: 29px;
+}
+.top-info a {
+  display: flex;
+  align-items: center;
+  padding-top: 4px;
+  margin-right: 5%;
+}
+.top-info a:last-of-type {
+  margin-right: 0;
+}
+.top-info a span {
+  font-size: 14px;
+  color: #fff;
+}
+.top-info a span:hover {
+  text-decoration: underline;
+}
+.top-info i {
+  color: #fff;
+}
+.fa-envelope{
+  margin-left: 5px;
+}
+.top-info .container {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
+.main-nav.fixed-pos { 
+  top: 30px; 
+  height: 58px;
+  background-color: #fff;
+}
+/* end top nav */
+
+/* main nav */
+
+ul#navigation a {
+  color: #0a2f6c;
+}
+
+/* end main nav */
+
+/* END HEADER */
+
+/* --- Media queries --- */
+
+@media screen and (min-width: 768px){
+
+  /* logo */
+
+  .logo-img {
+    width: 72px;
+    height: 72px;
+    border-radius: 36px;
+    border: 5px solid white;
+    background: white;
+  }
+
+  /* end logo */
+
+  /* top nav */
+
+  .top-info {
+    height: 41px;
+  }
+  .top-info a {
+    padding-top: 7px;
+    align-items: flex-start;
+  }
+  .top-info a span {
+    font-size: 18px;
+  }
+  .top-info i {
+    font-size: 24px;
+  }
+  .main-nav.fixed-pos {
+    top: 41px;
+    height: 61px;
+  }
+
+  /* end top nav */
+
+  /* main nav */
+
+  /* nav.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  } */
+  /* nav.container .logo {
+    margin: -41px 0 0 5px;
+  } */
+  ul#navigation > li > a {
+    padding: 8px 10px;
+    font-size: 16px;
+  }
+
+  /* end main nav */
+
+}
+
+
+/* End media queries */
+
+/* End Style changes */

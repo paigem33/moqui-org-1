@@ -105,6 +105,19 @@ h1:target, h2:target, h3:target { display: inline-block; padding-top: 108px; mar
 
 /* --- Style changes --- */
 
+/* HEADER */
+
+/* Logo */
+
+.logo-img {
+  padding: 0;
+  margin: 0;
+  height: 48px;
+  width: 48px;
+}
+
+/* End logo */
+
 /* Top nav */
 .top-info {
   margin-top: 0;
@@ -161,9 +174,23 @@ ul#navigation a {
 
 /* end main nav */
 
+/* END HEADER */
+
 /* --- Media queries --- */
 
 @media screen and (min-width: 768px){
+
+  /* logo */
+
+  .logo-img {
+    width: 72px;
+    height: 72px;
+    border-radius: 36px;
+    border: 5px solid white;
+    background: white;
+  }
+
+  /* end logo */
 
   /* top nav */
 
@@ -189,7 +216,16 @@ ul#navigation a {
 
   /* main nav */
 
-
+  /* nav.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  } */
+  /* nav.container .logo {
+    margin: -41px 0 0 5px;
+  } */
   ul#navigation > li > a {
     padding: 8px 10px;
     font-size: 16px;

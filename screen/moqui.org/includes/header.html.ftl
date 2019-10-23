@@ -64,7 +64,7 @@
             <div class="main-nav fixed-pos">
                 <nav class="container">
                     <div class="logo pull-left">
-                        <a href="/index.html"><img class="logo-img moqui-logo" src="/MoquiLogoNew.png" alt="Moqui Logo"></a>
+                        <a href="/index.html"><img class="logo-img moqui-logo" src="/gnd-logo.svg" alt="Moqui Logo"></a>
                     </div>
                     <div class="pull-right" id="navigation-box">
                         <a id="navigation-toggle" href="#"><span class="menu-icon"></span></a>

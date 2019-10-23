@@ -159,15 +159,19 @@ h1:target, h2:target, h3:target { display: inline-block; padding-top: 108px; mar
   justify-content: flex-end;
   padding: 0;
 }
+
+/* end top nav */
+
+/* main nav */
+
+.main-nav .container {
+  width: 100%;
+}
 .main-nav.fixed-pos { 
   top: 30px; 
   height: 58px;
   background-color: #fff;
 }
-/* end top nav */
-
-/* main nav */
-
 ul#navigation a {
   color: #0a2f6c;
 }
@@ -197,6 +201,10 @@ ul#navigation a {
   .top-info {
     height: 41px;
   }
+  /* TODO: fix spacing on top nav at large screens  */
+  .top-info .container {
+    /* max-width: 1063px; */
+  }
   .top-info a {
     padding-top: 7px;
     align-items: flex-start;
@@ -216,6 +224,15 @@ ul#navigation a {
 
   /* main nav */
 
+  .main-nav .container {
+    max-width: 1063px;
+  }
+  nav.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
   /* nav.container {
     display: flex;
     justify-content: space-between;
@@ -229,6 +246,13 @@ ul#navigation a {
   ul#navigation > li > a {
     padding: 8px 10px;
     font-size: 16px;
+  }
+  li .donateBtn {
+    background-color: #f6914a;
+    text-transform: uppercase;
+    width: 116px;
+    color: #fff;
+    text-align: center;
   }
 
   /* end main nav */

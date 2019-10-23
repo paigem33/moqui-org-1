@@ -63,10 +63,10 @@
 
             <div class="main-nav fixed-pos">
                 <nav class="container">
-                    <div class="logo pull-left">
-                        <a href="/index.html"><img class="logo-img moqui-logo" src="/gnd-logo.svg" alt="Moqui Logo"></a>
+                    <div class="logo">
+                        <a href="/index.html"><img class="logo-img" src="/gnd-logo.svg" alt="Moqui Logo"></a>
                     </div>
-                    <div class="pull-right" id="navigation-box">
+                    <div class="" id="navigation-box">
                         <a id="navigation-toggle" href="#"><span class="menu-icon"></span></a>
                         <ul id="navigation">
                             <li<#if menu_active! == "home" || menu_active! == "mantle" || menu_active! == "applications" || menu_active! == "addons"> class="active-item"</#if>>
@@ -89,7 +89,7 @@
                                 <a href="/index.html">Photos</a>
                             </li>
                             <li<#if menu_active! == "donate" || menu_active! == "mantle" || menu_active! == "applications" || menu_active! == "addons"> class="active-item"</#if>>
-                                <a href="/index.html">Donate</a>
+                                <a href="/index.html" class="donateBtn">Donate</a>
                             </li>
                         </ul>
                     </div>

@@ -10,7 +10,7 @@ h3 { margin-top: 20px; }
 .logo { padding-top: 16px; }
 .logo-img { margin-bottom: 20px; }
 ul#navigation > li > a { padding: 23px 15px 21px; }
-ul#navigation a:hover, ul#navigation .active-item > a { color: #5ba5eb; }
+ul#navigation a:hover, ul#navigation .active-item > a { color: #60cbd7; }
 #navigation { padding-top: 5px; }
 
 @media (min-width: 768px) { ul#navigation > li:hover > ul { top: 70px; background: rgba(33, 44, 67, 0.9); } }
@@ -104,6 +104,7 @@ h1:target, h2:target, h3:target { display: inline-block; padding-top: 108px; mar
 .jstree-default .jstree-anchor { white-space: normal; height: auto; }
 
 /* --- Style changes --- */
+/* TODO: fix font styles, get font being used on GND */
 
 /* HEADER */
 
@@ -114,6 +115,10 @@ h1:target, h2:target, h3:target { display: inline-block; padding-top: 108px; mar
   margin: 0;
   height: 48px;
   width: 48px;
+}
+.logo {
+  position: absolute;
+  left: 5px;
 }
 
 /* End logo */
@@ -175,6 +180,16 @@ h1:target, h2:target, h3:target { display: inline-block; padding-top: 108px; mar
 ul#navigation a {
   color: #0a2f6c;
 }
+ul#navigation  > li > a:hover {
+  color: #60cbd7;
+  background-color: #fff;
+}
+ul#navigation > li:hover {
+  padding-bottom: 0;
+}
+ul#navigation > li::after {
+  display: none;
+}
 
 /* end main nav */
 
@@ -186,6 +201,9 @@ ul#navigation a {
 
   /* logo */
 
+  .logo {
+    top: -41px;
+  }
   .logo-img {
     width: 72px;
     height: 72px;
@@ -243,16 +261,32 @@ ul#navigation a {
   /* nav.container .logo {
     margin: -41px 0 0 5px;
   } */
-  ul#navigation > li > a {
-    padding: 8px 10px;
-    font-size: 16px;
+  ul#navigation {
+    padding: 0;
+    display: flex;
+    align-items: center;
   }
-  li .donateBtn {
+  #navigation-box {
+    /* TODO: fix placement of li's as the screen gets larger - maybe with percent widths? */
+    position: absolute;
+    right: 0;
+  }
+  ul#navigation > li > a {
+    padding: 8px 30px;
+    font-size: 18px;
+  }
+  ul#navigation > li > .donateBtn {
     background-color: #f6914a;
     text-transform: uppercase;
-    width: 116px;
-    color: #fff;
     text-align: center;
+    width: 116px;
+    height: 61px;
+    color: #fff;
+    padding-top: 21px;
+  }
+  ul#navigation > li > .donateBtn:hover {
+    background-color: #ffdaa6;
+    color: #f6914a;
   }
 
   /* end main nav */

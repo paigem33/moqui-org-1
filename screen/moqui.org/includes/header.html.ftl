@@ -50,6 +50,10 @@
 
             <div class="top-info">
                 <div class="container">
+                        <a href="/docs/moqui/Community+Guide" target="_blank" class="onMobile">
+                            <span>Call Now</span>
+                            <i class="fas fa-phone fa-fw"></i>
+                        </a>
                         <a href="/docs/moqui/Community+Guide" target="_blank">
                             <span>Contact Us</span>
                             <i class="far fa-envelope fa-fw"></i>

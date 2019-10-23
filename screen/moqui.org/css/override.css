@@ -44,6 +44,39 @@ ul#navigation a:hover, ul#navigation .active-item > a { color: #5ba5eb; }
   display: inline-block;
   font-size: 16px;
 }
+
+.header .main-navigation img.logo {
+  padding: 0;
+  margin: 0;
+  border: 5px solid white;
+  border-radius: 36px;
+  width: 72px;
+  height: 72px;
+  background: white;
+}
+
+
+@media only screen and (min-width: 768px)
+.header .contact-links{
+  height: 41px;
+  line-height: 41px;
+}
+
+.header .contact-links {
+  background: #0a2f6c;
+  color: white;
+  font-family: 'Roboto';
+  height: 29px;
+  line-height: 29px;
+}
+
+.header .main-navigation
+.max-width .logo-hamburger-donate
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .btn{display: inline-block; margin-right: 20px;}
 .home-button {
   background-color:

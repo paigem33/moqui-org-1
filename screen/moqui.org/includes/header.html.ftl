@@ -13,7 +13,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 
-    <link href="/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <#--  Added current font awesome cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <#--  <link href="/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>  -->
     <link href="/libs/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <link href="/css/style_blue.css" rel="stylesheet">
 
@@ -45,6 +47,20 @@
 <div class="wrapper">
     <header>
         <div class="presentation">
+
+            <div class="top-info">
+                <div class="container">
+                        <a href="/docs/moqui/Community+Guide" target="_blank">
+                            <span>Contact Us</span>
+                            <i class="far fa-envelope fa-fw"></i>
+                        </a>
+                        <a href="/docs/moqui/Community+Guide" target="_blank">
+                            <span>Directions</span>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                        </a>
+                </div>
+            </div>
+
             <div class="main-nav fixed-pos">
                 <nav class="container">
                     <div class="logo pull-left">
@@ -53,53 +69,33 @@
                     <div class="pull-right" id="navigation-box">
                         <a id="navigation-toggle" href="#"><span class="menu-icon"></span></a>
                         <ul id="navigation">
-                            <li<#if menu_active! == "framework" || menu_active! == "mantle" || menu_active! == "applications" || menu_active! == "addons"> class="active-item"</#if>>
-                                <span class="sub-nav-toggle plus"></span>
-                                <a href="/index.html">Ecosystem</a>
-                                <ul>
-                                    <li<#if menu_active! == "framework"> class="active-item"</#if>><a href="/framework.html">Framework</a></li>
-                                    <li<#if menu_active! == "mantle"> class="active-item"</#if>><a href="/mantle.html">Business Artifacts</a></li>
-                                    <li<#if menu_active! == "applications"> class="active-item"</#if>><a href="/applications.html">Applications</a></li>
-                                    <li<#if menu_active! == "addons"> class="active-item"</#if>><a href="/addons.html">Add ons</a></li>
-                                </ul>
+                            <li<#if menu_active! == "home" || menu_active! == "mantle" || menu_active! == "applications" || menu_active! == "addons"> class="active-item"</#if>>
+                                <#--  <span class="sub-nav-toggle plus"></span>  -->
+                                <a href="/index.html">Home</a>
                             </li>
-                            <li<#if menu_active! == "service"> class="active-item"</#if>><a href="/service.html">Service Providers</a></li>
-                            <li>
-                                <span class="sub-nav-toggle plus"></span>
-                                <a href="/vapps/my/User/Request">Issues &amp; Tasks</a>
-                                <ul>
-                                    <li><a href="/vapps/my">My Account</a></li>
-                                    <li><a href="/vapps/my/User/Request">My Requests (Issues)</a></li>
-                                    <li><a href="/vapps/hm">HiveMind PM</a></li>
-                                </ul>
+                            <li<#if menu_active! == "newHere" || menu_active! == "mantle" || menu_active! == "applications" || menu_active! == "addons"> class="active-item"</#if>>
+                                <a href="/index.html">New Here</a>
                             </li>
-                            <li<#if menu_active! == "docs"> class="active-item"</#if>>
-                                <span class="sub-nav-toggle plus"></span>
-                                <a href="/docs">Documentation</a>
-                                <ul>
-                                    <li><a href="/docs/moqui">Moqui Ecosystem</a></li>
-                                    <li><a href="/docs/framework">Moqui Framework</a></li>
-                                    <li><a href="/docs/mantle">Mantle Business Artifacts</a></li>
-                                    <li><a href="/docs/apps">Applications</a></li>
-                                    <li><a href="/javadoc/index.html" target="_blank">API JavaDoc</a></li>
-                                </ul>
+                            <li<#if menu_active! == "events" || menu_active! == "mantle" || menu_active! == "applications" || menu_active! == "addons"> class="active-item"</#if>>
+                                <a href="/index.html">Events</a>
                             </li>
-                            <li<#if menu_active! == "search"> class="active-item"</#if>><a href="/search">Search</a></li>
+                            <li<#if menu_active! == "calendar" || menu_active! == "mantle" || menu_active! == "applications" || menu_active! == "addons"> class="active-item"</#if>>
+                                <a href="/index.html">Calendar</a>
+                            </li>
+                            <li<#if menu_active! == "startServing" || menu_active! == "mantle" || menu_active! == "applications" || menu_active! == "addons"> class="active-item"</#if>>
+                                <a href="/index.html">Start Serving</a>
+                            </li>
+                            <li<#if menu_active! == "photos" || menu_active! == "mantle" || menu_active! == "applications" || menu_active! == "addons"> class="active-item"</#if>>
+                                <a href="/index.html">Photos</a>
+                            </li>
+                            <li<#if menu_active! == "donate" || menu_active! == "mantle" || menu_active! == "applications" || menu_active! == "addons"> class="active-item"</#if>>
+                                <a href="/index.html">Donate</a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
                 <#-- <div class="divider-circle"></div> -->
             </div>
-            <div class="top-info">
-                <div class="container">
-                    <p class="top-info__text pull-left hidden-xs small">
-                        <a href="https://demo.moqui.org/vapps" target="_blank">Try the applications demo!</a>
-                        <a href="https://demo.moqui.org/store" target="_blank">Try POP Shop eCommerce!</a>
-                    </p>
-                    <p class="top-info__text pull-right small">
-                        Comments? Questions? Get Involved? <a href="/docs/moqui/Community+Guide" target="_blank">Community Guide</a>
-                    </p>
-                </div>
-            </div>
+            
         </div>
     </header>

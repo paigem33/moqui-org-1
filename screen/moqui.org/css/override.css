@@ -107,6 +107,11 @@ h1:target, h2:target, h3:target { display: inline-block; padding-top: 108px; mar
 /* TODO: fix font styles, get font being used on GND */
 /* TODO: fix spacing of li in main-nav - currently over lapping logo at vertical tablet size */
 
+body {
+  max-width: 1010px;
+  margin:auto;
+}
+
 /* HEADER */
 
 /* Logo */
@@ -276,6 +281,92 @@ ul#navigation > li::after {
 
 /* END HEADER */
 
+/* footer */
+footer {
+  padding: 20px 10px;
+}
+footer p {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+footer p:last-of-type {
+  margin-bottom: 10px;
+}
+footer form {
+  display: flex;
+  margin-bottom: 20px;
+}
+footer form input {
+  width: 55%;
+  border: 1px solid #acacac;
+  color: #acacac;
+  border-right: 0;
+  height: 30px;
+  line-height: 30px;
+  font-size: 11px;
+}
+footer form input::placeholder {
+  color: #acacac;
+  opacity: 1;
+}
+footer form input:focus {
+  border: solid 1px #7e9ab6;
+}
+footer form button {
+  width: 45%;
+  background-color: #0076a2;
+  border: none;
+  color: #fff;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding: 0 3%;
+  font-size: 11px;
+  height: 30px;
+}
+footer form button:hover {
+  color: #0076a2;
+  background-color: #ebebeb;
+}
+.footer-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+.footer-nav ul li {
+  width: 25%;
+  padding-bottom: 16px;
+}
+.footer-nav ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer-nav ul li a {
+  color: black;
+}
+.footer-icons {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 50%;
+  padding-right: 1.5rem;
+}
+.footer-icons .donateBtn {
+  position: static;
+  padding: 11px 19px;
+}
+.footer-icons i {
+  font-size: 35px;
+  color: #0a2f6c;
+}
+
+
+/* end footer */
+
 /* --- Media queries --- */
 
 @media screen and (min-width: 768px){
@@ -338,16 +429,6 @@ ul#navigation > li::after {
     margin: 0;
     padding: 0;
   }
-  /* nav.container {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  } */
-  /* nav.container .logo {
-    margin: -41px 0 0 5px;
-  } */
   ul#navigation {
     padding: 0;
     display: flex;
@@ -372,6 +453,23 @@ ul#navigation > li::after {
     padding-top: 19px;
   }
   /* end main nav */
+
+  /* Footer */
+
+  footer div {
+    display: flex;
+  }
+  footer div form, .footer-nav {
+    width: 50%;
+  }
+  footer div form {
+    margin: 0 30px 0 0;
+  }
+  footer p:last-of-type {
+    padding-bottom: 25px;
+  }
+
+  /* End footer */
 
 }
 

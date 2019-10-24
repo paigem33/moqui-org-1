@@ -51,10 +51,14 @@
 		if ($this.attr('style')&&$this.css('display')=='none')
 		{
 			$this.removeAttr('style').removeClass('showen-c').addClass('hidden-c');
+			// edited, change icon on click
+			$('#navigation-toggle i').removeClass('fa-times').addClass('fa-bars');
 		}
 	  
 		if ($this.attr('style')&&$this.css('display')=='block'){
 			$this.removeAttr('style').removeClass('hidden-c').addClass('showen-c');
+			// edited, change icon on click
+			$('#navigation-toggle i').removeClass('fa-bars').addClass('fa-times');
 		}
 	}
 	

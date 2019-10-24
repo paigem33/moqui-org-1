@@ -10,7 +10,7 @@ h3 { margin-top: 20px; }
 .logo { padding-top: 16px; }
 .logo-img { margin-bottom: 20px; }
 ul#navigation > li > a { padding: 23px 15px 21px; }
-ul#navigation a:hover, ul#navigation .active-item > a { color: #5ba5eb; }
+ul#navigation a:hover, ul#navigation .active-item > a { color: #60cbd7; }
 #navigation { padding-top: 5px; }
 
 @media (min-width: 768px) { ul#navigation > li:hover > ul { top: 70px; background: rgba(33, 44, 67, 0.9); } }
@@ -104,6 +104,8 @@ h1:target, h2:target, h3:target { display: inline-block; padding-top: 108px; mar
 .jstree-default .jstree-anchor { white-space: normal; height: auto; }
 
 /* --- Style changes --- */
+/* TODO: fix font styles, get font being used on GND */
+/* TODO: fix spacing of li in main-nav - currently over lapping logo at vertical tablet size */
 
 /* HEADER */
 
@@ -115,8 +117,68 @@ h1:target, h2:target, h3:target { display: inline-block; padding-top: 108px; mar
   height: 48px;
   width: 48px;
 }
+.logo {
+  position: absolute;
+  left: 15px;
+  top: -11px
+}
 
 /* End logo */
+
+/* Mobile Menu styles */
+
+ul#navigation {
+  width: 100%;
+  top: 58px;
+  background-color: #ebebeb;
+  box-shadow: 0 3px 6px #e5e5e5;
+  padding: 0 0 0 32px;
+}
+ul#navigation li, ul#navigation li:last-of-type{
+  border-bottom: 1px solid #acacac;
+  padding: 0;
+}
+ul#navigation > li > a {
+  color: #0a2f6c;
+  padding: 14px 0;
+}
+#navigation-toggle {
+  width: auto;
+  height: auto;
+  background: transparent;
+  border: 0;
+  position: relative;
+  top: -5px;
+}
+#navigation-toggle i {
+  font-size: 50px;
+  color: #0a2f6c;
+  margin-right: 130px;
+}
+#navigation-toggle.open-menu {
+  background: transparent;
+  border: none;
+}
+#navigation > ul.onMobile {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ebebeb;
+  margin: 10px 0 8px;
+  padding-right: 32px;
+}
+#navigation > ul.onMobile > li {
+  border-bottom: none;
+}
+#navigation > ul.onMobile a:hover {
+  color: #0a2f6c;
+}
+#navigation > ul.onMobile > li a {
+  font-size: 35px;
+  padding: 0;
+}
+
+
+/* End mobile menu styles */
 
 /* Top nav */
 .top-info {
@@ -137,7 +199,7 @@ h1:target, h2:target, h3:target { display: inline-block; padding-top: 108px; mar
   margin-right: 5%;
 }
 .top-info a:last-of-type {
-  margin-right: 0;
+  margin-right: 1em;
 }
 .top-info a span {
   font-size: 14px;
@@ -159,17 +221,55 @@ h1:target, h2:target, h3:target { display: inline-block; padding-top: 108px; mar
   justify-content: flex-end;
   padding: 0;
 }
-.main-nav.fixed-pos { 
-  top: 30px; 
-  height: 58px;
-  background-color: #fff;
-}
+
 /* end top nav */
 
 /* main nav */
 
+.presentation{
+  height: 86px;
+}
+.main-nav .container {
+  width: 100%;
+}
+.main-nav.fixed-pos { 
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 29px; 
+  height: 58px;
+  background-color: #fff;
+}
 ul#navigation a {
   color: #0a2f6c;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+ul#navigation  > li > a:hover {
+  color: #60cbd7;
+  background-color: transparent;
+}
+ul#navigation > li:hover {
+  padding-bottom: 0;
+}
+ul#navigation > li::after {
+  display: none;
+}
+.donateBtn {
+  background-color: #f6914a;
+  text-transform: uppercase;
+  text-align: center;
+  width: 116px;
+  height: 58px;
+  color: #fff;
+  font-size: 18px;
+  padding-top: 17px;
+  position: absolute;
+  right: 0;
+}
+.donateBtn:hover {
+  background-color: #ffdaa6;
+  color: #f6914a;
 }
 
 /* end main nav */
@@ -180,8 +280,17 @@ ul#navigation a {
 
 @media screen and (min-width: 768px){
 
+  /* Hide .onMobile at larger screens */
+  .top-info > div > a.onMobile, ul#navigation > ul.onMobile {
+    display: none;
+  }
+
   /* logo */
 
+  .logo {
+    top: -41px;
+    left: 5px;
+  }
   .logo-img {
     width: 72px;
     height: 72px;
@@ -196,6 +305,10 @@ ul#navigation a {
 
   .top-info {
     height: 41px;
+  }
+  /* TODO: fix spacing on top nav at large screens  */
+  .top-info .container {
+    /* max-width: 1063px; */
   }
   .top-info a {
     padding-top: 7px;
@@ -216,6 +329,15 @@ ul#navigation a {
 
   /* main nav */
 
+  .main-nav .container {
+    max-width: 1063px;
+  }
+  nav.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
   /* nav.container {
     display: flex;
     justify-content: space-between;
@@ -226,11 +348,29 @@ ul#navigation a {
   /* nav.container .logo {
     margin: -41px 0 0 5px;
   } */
-  ul#navigation > li > a {
-    padding: 8px 10px;
-    font-size: 16px;
+  ul#navigation {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 57px;
+    background-color: transparent;
+    box-shadow: none;
   }
-
+  ul#navigation li, ul#navigation li:last-of-type {
+    border-bottom: none;
+  }
+  #navigation-box {
+    /* TODO: fix placement of li's as the screen gets larger - maybe with percent widths? */
+    position: absolute;
+    right: 0;
+  }
+  ul#navigation > li > a {
+    padding: 22px 30px;
+  }
+  .donateBtn {
+    height: 61px;
+    padding-top: 19px;
+  }
   /* end main nav */
 
 }

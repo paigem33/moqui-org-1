@@ -3,6 +3,30 @@ li {
   text-align: center;
   list-style-type: none;
 }
+
+section.attend-service {
+  color: #fcf4c9;
+  font-family: 'Roboto';
+}
+section.attend-service ol li.step img {
+  display: block;
+  margin: 0 auto 5px auto;
+  max-width: 296px;
+  width: 100%;
+}
+
+section.attend-service ol li.step {
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+}
+
 .vertical-navigator .navigator-links a {
   border-bottom: 1px solid #acacac;
   color: #0a2f6c;
@@ -15,6 +39,48 @@ li {
   text-transform: uppercase;
   list-style-type: none;
 }
+
+@media (min-width: 768px) { ul#navigation > li:hover > ul { top: 70px; background: rgba(33, 44, 67, 0.9); } }
+.header .max-width {
+    padding-right: 0;
+}
+
+.max-width {
+    margin: 0 auto;
+    max-width: 1050px;
+}
+
+@media (min-width: 768px) { ul#navigation > li:hover > ul { top: 70px; background: rgba(33, 44, 67, 0.9); } }
+.header .main-navigation .hamburger-and-donate a.donate {
+    height: 61px;
+    line-height: 61px;
+}
+
+header .main-navigation .hamburger {
+  cursor: pointer;
+  height: 38px;
+  margin: 10px 2em 0 1em;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  width: 39px;
+}
+
+.header .main-navigation a.donate {
+    background-color: #f6914a;
+    color: white;
+    font-family: 'Roboto Bold';
+    font-size: 18px;
+    height: 58px;
+    line-height: 58px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 116px;
+}
+
 
 @media (min-width: 768px) { ul#navigation > li:hover > ul { top: 70px; background: rgba(33, 44, 67, 0.9); } }
 #navigation-toggle { margin-top: 8px; }
@@ -176,7 +242,7 @@ opacity: none;
 @media (min-width: 768px) { ul#navigation > li:hover > ul { top: 70px; background: rgba(33, 44, 67, 0.9); } }
 #navigation-toggle { margin-top: 8px; }.tile-background .lotus-background {
     width: 100%;
-    background-image: url(img/lotus1200x533.png);
+    background-image: url("images/lotus3.png");
     background-position: center 320px;
     background-size: contain;
     background-repeat: no-repeat;

@@ -1,5 +1,13 @@
+
 </div>
 <!--End wrapper -->
+<footer>
+    <p>Subscribe to our mailing list</p>
+    <form action="" method="">
+        <input type="email" value name="EMAIL" placeholder="E-Mail Address">
+        <button type="submit" name="subscribe">Subscribe</button>
+    </form>
+</footer>
 
 <script>
 $(document).ready(function() {

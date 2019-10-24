@@ -210,12 +210,13 @@ ul#navigation > li {
 	margin-top: 1px;
 }
 
-ul#navigation ul{
+/* Removed for nested ul of social media icons */
+/* ul#navigation ul{
 	position:static;
 	background: #7ccbfc;
 	padding: 0 5px;
 	display: none;
-}
+} */
 
 .sub-nav-toggle {
 	display:block;

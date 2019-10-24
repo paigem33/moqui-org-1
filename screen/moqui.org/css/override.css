@@ -105,6 +105,7 @@ h1:target, h2:target, h3:target { display: inline-block; padding-top: 108px; mar
 
 /* --- Style changes --- */
 /* TODO: fix font styles, get font being used on GND */
+/* TODO: fix spacing of li in main-nav - currently over lapping logo at vertical tablet size */
 
 /* HEADER */
 
@@ -118,10 +119,66 @@ h1:target, h2:target, h3:target { display: inline-block; padding-top: 108px; mar
 }
 .logo {
   position: absolute;
-  left: 5px;
+  left: 15px;
+  top: -11px
 }
 
 /* End logo */
+
+/* Mobile Menu styles */
+
+ul#navigation {
+  width: 100%;
+  top: 58px;
+  background-color: #ebebeb;
+  box-shadow: 0 3px 6px #e5e5e5;
+  padding: 0 0 0 32px;
+}
+ul#navigation li, ul#navigation li:last-of-type{
+  border-bottom: 1px solid #acacac;
+  padding: 0;
+}
+ul#navigation > li > a {
+  color: #0a2f6c;
+  padding: 14px 0;
+}
+#navigation-toggle {
+  width: auto;
+  height: auto;
+  background: transparent;
+  border: 0;
+  position: relative;
+  top: -5px;
+}
+#navigation-toggle i {
+  font-size: 50px;
+  color: #0a2f6c;
+  margin-right: 130px;
+}
+#navigation-toggle.open-menu {
+  background: transparent;
+  border: none;
+}
+#navigation > ul.onMobile {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ebebeb;
+  margin: 10px 0 8px;
+  padding-right: 32px;
+}
+#navigation > ul.onMobile > li {
+  border-bottom: none;
+}
+#navigation > ul.onMobile a:hover {
+  color: #0a2f6c;
+}
+#navigation > ul.onMobile > li a {
+  font-size: 35px;
+  padding: 0;
+}
+
+
+/* End mobile menu styles */
 
 /* Top nav */
 .top-info {
@@ -169,26 +226,50 @@ h1:target, h2:target, h3:target { display: inline-block; padding-top: 108px; mar
 
 /* main nav */
 
+.presentation{
+  height: 86px;
+}
 .main-nav .container {
   width: 100%;
 }
 .main-nav.fixed-pos { 
-  top: 30px; 
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 29px; 
   height: 58px;
   background-color: #fff;
 }
 ul#navigation a {
   color: #0a2f6c;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 ul#navigation  > li > a:hover {
   color: #60cbd7;
-  background-color: #fff;
+  background-color: transparent;
 }
 ul#navigation > li:hover {
   padding-bottom: 0;
 }
 ul#navigation > li::after {
   display: none;
+}
+.donateBtn {
+  background-color: #f6914a;
+  text-transform: uppercase;
+  text-align: center;
+  width: 116px;
+  height: 58px;
+  color: #fff;
+  font-size: 18px;
+  padding-top: 17px;
+  position: absolute;
+  right: 0;
+}
+.donateBtn:hover {
+  background-color: #ffdaa6;
+  color: #f6914a;
 }
 
 /* end main nav */
@@ -200,7 +281,7 @@ ul#navigation > li::after {
 @media screen and (min-width: 768px){
 
   /* Hide .onMobile at larger screens */
-  .top-info > div > a.onMobile {
+  .top-info > div > a.onMobile, ul#navigation > ul.onMobile {
     display: none;
   }
 
@@ -208,6 +289,7 @@ ul#navigation > li::after {
 
   .logo {
     top: -41px;
+    left: 5px;
   }
   .logo-img {
     width: 72px;
@@ -231,9 +313,6 @@ ul#navigation > li::after {
   .top-info a {
     padding-top: 7px;
     align-items: flex-start;
-  }
-  .top-info a:last-of-type {
-    margin-right: 0;
   }
   .top-info a span {
     font-size: 18px;
@@ -273,6 +352,12 @@ ul#navigation > li::after {
     padding: 0;
     display: flex;
     align-items: center;
+    margin-right: 57px;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  ul#navigation li, ul#navigation li:last-of-type {
+    border-bottom: none;
   }
   #navigation-box {
     /* TODO: fix placement of li's as the screen gets larger - maybe with percent widths? */
@@ -280,23 +365,12 @@ ul#navigation > li::after {
     right: 0;
   }
   ul#navigation > li > a {
-    padding: 8px 30px;
-    font-size: 18px;
+    padding: 22px 30px;
   }
-  ul#navigation > li > .donateBtn {
-    background-color: #f6914a;
-    text-transform: uppercase;
-    text-align: center;
-    width: 116px;
+  .donateBtn {
     height: 61px;
-    color: #fff;
-    padding-top: 21px;
+    padding-top: 19px;
   }
-  ul#navigation > li > .donateBtn:hover {
-    background-color: #ffdaa6;
-    color: #f6914a;
-  }
-
   /* end main nav */
 
 }

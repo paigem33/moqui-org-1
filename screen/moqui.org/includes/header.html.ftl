@@ -65,13 +65,16 @@
                 </div>
             </div>
 
+
             <div class="main-nav fixed-pos">
                 <nav class="container">
                     <div class="logo">
                         <a href="/index.html"><img class="logo-img" src="/gnd-logo.svg" alt="Moqui Logo"></a>
                     </div>
-                    <div class="" id="navigation-box">
-                        <a id="navigation-toggle" href="#"><span class="menu-icon"></span></a>
+                    <ul class="" id="navigation-box">
+                        <a id="navigation-toggle" href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
                         <ul id="navigation">
                             <li<#if menu_active! == "home" || menu_active! == "mantle" || menu_active! == "applications" || menu_active! == "addons"> class="active-item"</#if>>
                                 <#--  <span class="sub-nav-toggle plus"></span>  -->
@@ -92,10 +95,25 @@
                             <li<#if menu_active! == "photos" || menu_active! == "mantle" || menu_active! == "applications" || menu_active! == "addons"> class="active-item"</#if>>
                                 <a href="/index.html">Photos</a>
                             </li>
-                            <li<#if menu_active! == "donate" || menu_active! == "mantle" || menu_active! == "applications" || menu_active! == "addons"> class="active-item"</#if>>
-                                <a href="/index.html" class="donateBtn">Donate</a>
-                            </li>
+                            <ul class="onMobile">
+                                <li>
+                                    <a href="/index.html"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="/index.html"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="/index.html"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li>
+                                    <a href="/index.html"><i class="fab fa-twitter-square"></i></a>
+                                </li>
+                            </ul>
                         </ul>
+                        <div>
+                            <a href="/index.html" class="donateBtn">Donate</a>
+                        </div>
+                        
                     </div>
                 </nav>
                 <#-- <div class="divider-circle"></div> -->

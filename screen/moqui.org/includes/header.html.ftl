@@ -5,12 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Guru Nanak Dwara Home</title>
         <link href="css/main.css" rel="stylesheet">
-        <link href="index.css" rel="stylesheet">
         <link rel="image_src" type="image/png" href="/img/gnd-image-src.png">
         <meta property="og:image" content="/img/gnd-image-src.png">
         <meta name="twitter:image" content="/img/gnd-image-src.png">
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-NRMZ36R');</script><!-- End Google Tag Manager -->
         <link href="/css/override.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <!--<link href="mantle.html" /> -->
         </head>
     <body>
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRMZ36R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -20,15 +27,15 @@
                 <div class="max-width">
                     <a href="tel:1-602.632.9598" class="call">
                         <span>Call Now</span>
-                        <i class="fas fa-phone fa-fw"></i>
+                        <i class="fa fas fa-phone fa-fw"></i>
                     </a>
                     <a href="/contact.html" class="contact">
-                        <span>Contact Us</span>
-                        <i class="far fa-envelope fa-fw"></i>
+                        <span>Contact Us</i></span>
+                        <i class="fa far fa-envelope fa-spin" style="color: red;"></i>
                     </a>
                     <a href="https://www.google.com/maps/place/Guru+Nanak+Dwara/@33.4754179,-112.0654331,14.37z/data=!4m5!3m4!1s0x872b125f9d3f800b:0x4952a3dc1c4406b7!8m2!3d33.4733031!4d-112.0621051" target="_blank" class="directions">
                         <span>Directions</span>
-                        <i class="fas fa-map-marker-alt fa-fw"></i>
+                        <i class="fa fas fa-map-pin fa-2x" style="color:#e134eb;" ></i>
                     </a>
                 </div>
             </div>
@@ -44,7 +51,7 @@
                                 <span></span>
                                 <span></span>
                             </div>
-                            <a href="/donate.html" class="donate">Donate</a>
+                            
                         </div>
                         <nav class="vertical-navigator" role="navigation" data-node-name="verticalNavigatorNode">
                             <ul class="navigator-links">
@@ -54,7 +61,7 @@
                                     </a>
                                 </li>
                                 <li id="newhereNavItem">
-                                    <a href="/newhere.html" class="nav-link">
+                                    <a href="/mantle.html" class="nav-link">
                                     <span>New Here</span>
                                     </a>
                                 </li>
@@ -77,20 +84,22 @@
                                     <a href="/photos.html" class="nav-link">
                                     <span>Photos</span>
                                     </a>
+                                    
                                 </li>
+                                <a href="/donate.html" class="donate">Donate</a>
                             </ul>
                             <p class="social-media-links">
                                 <a href="https://www.facebook.com/gurunanakdwara/" title="GND Facebook Page" target="_blank">
-                                <i class="fab fa-facebook"></i>
+                                <i class="fa fab fa-facebook"></i>
                                 </a>
                                 <a href="https://www.instagram.com/gurunanakdwara/" title="GND Instagram Page" target="_blank">
-                                <i class="fab fa-instagram"></i>
+                                <i class="fa fab fa-instagram"></i>
                                 </a>
                                 <a href="https://www.youtube.com/c/GuruNanakDwara" title="GND YouTube Channel" target="_blank">
-                                <i class="fab fa-youtube"></i>
+                                <i class="fa fab fa-youtube"></i>
                                 </a>
                                 <a href="https://twitter.com/gurunanakdwara" title="GND Twitter Page" target="_blank">
-                                <i class="fab fa-twitter-square"></i>
+                                <i class="fa fab fa-twitter-square"></i>
                                 </a>
                             </p>
                         </nav>

@@ -200,7 +200,8 @@ opacity: none;
 }
 
 @media (min-width: 768px) { ul#navigation > li:hover > ul { top: 70px; background: rgba(33, 44, 67, 0.9); } }
-#navigation-toggle { margin-top: 8px; }.home-video-wrapper .big-buttons a.home-button {
+#navigation-toggle { margin-top: 8px; }
+.home-video-wrapper .big-buttons a.home-button {
     margin-bottom: 0;
     max-width: 30%;
 }
@@ -214,7 +215,8 @@ opacity: none;
 }
 
 @media (min-width: 768px) { ul#navigation > li:hover > ul { top: 70px; background: rgba(33, 44, 67, 0.9); } }
-#navigation-toggle { margin-top: 8px; }.home-video-wrapper .home-video-inner {
+#navigation-toggle { margin-top: 8px; }
+.home-video-wrapper .home-video-inner {
     background-color: #666;
     background-image: url(img/home_video_placeholder_1200x699.jpg);
     background-repeat: no-repeat;
@@ -229,7 +231,7 @@ opacity: none;
 
 
 
-.header .main-navigation {
+.header, .main-navigation {
   align-items: center;
   background: white;
   color: #0a2f6c;
@@ -238,16 +240,35 @@ opacity: none;
 }
 
 
+.tile-background {
+    max-width: 100%;
+    margin: 0;
+    padding-bottom: 28px;
+}
+.tile-background {
+    padding-top: 55px;
+    background-color: #2ac6df;
+    background-image: url(img/gnd-tile.jpg);
+    background-position: center 320px;
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
 
 @media (min-width: 768px) { ul#navigation > li:hover > ul { top: 70px; background: rgba(33, 44, 67, 0.9); } }
-#navigation-toggle { margin-top: 8px; }.tile-background .lotus-background {
+#navigation-toggle { margin-top: 8px; }
+
+.tile-background, .lotus-background {
     width: 100%;
-    background-image: url("images/lotus3.png");
+    background-image: url("../images/lotus3.png");
     background-position: center 320px;
     background-size: contain;
     background-repeat: no-repeat;
 }
-
+.lotus {
+  background-image:  url("../images/lotus3.png");
+  background-size: fill;
+}
 html {
   color: -internal-root-color;
 }

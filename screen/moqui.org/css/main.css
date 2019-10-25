@@ -2710,19 +2710,19 @@
       width: 100%;
       z-index: 99
   }
-  .header .contact-links {
+  .header, .contact-links {
     background: #0a2f6c;
     color: white;
     font-family: 'Roboto';
     height: 29px;
     line-height: 29px;
   }
-  .header .contact-links .max-width {
+  .header, .contact-links .max-width {
     display: flex;
     justify-content: flex-end;
     align-items: center;
   }
-  .header .contact-links a {
+  .header, .contact-links a {
     color: white;
     font-size: 14px;
     margin-right: 5%;
@@ -2732,42 +2732,42 @@
     display: flex;
     align-items: center;
   }
-  .header .contact-links a.directions {
+  .header, .contact-links a.directions {
     margin-right: 1em;
   }
-  .header .contact-links a span:hover {
+  .header, .contact-links a span:hover {
     text-decoration: underline;
   }
-  .header .contact-links a:nth-child(2) i {
+  .header, .contact-links a:nth-child(2) i {
     padding-left: 6px;
   }
-  .header .contact-links i:hover {
+  .header, .contact-links i:hover {
     text-decoration: none;
   }
-  .header .main-navigation {
+  .header, .main-navigation {
     align-items: center;
     background: white;
     color: #0a2f6c;
     left: 0;
     padding: 0;
   }
-  .header .main-navigation .max-width .logo-hamburger-donate {
+  .header, .main-navigation, .max-width, .logo-hamburger-donate {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  .header .main-navigation .logo {
+  .header, .main-navigation, .logo {
     margin: 4px 0 0 15px;
     padding: 0;
     height: 48px;
     width: 48px;
   }
-  .header .main-navigation .hamburger-and-donate {
+  .header, .main-navigation, .hamburger-and-donate {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  .header .main-navigation .hamburger {
+  .header, .main-navigation, .hamburger {
     cursor: pointer;
     height: 38px;
     margin: 10px 2em 0 1em;
@@ -2776,7 +2776,7 @@
     transition: 0.5s ease-in-out;
     width: 39px;
   }
-  .header .main-navigation .hamburger span {
+  .header, .main-navigation, .hamburger span {
     background: #0a2f6c;
     border-radius: 9px;
     display: block;
@@ -2787,27 +2787,27 @@
     transform: rotate(0deg);
     width: 100%;
   }
-  .header .main-navigation .hamburger span:nth-child(1) {
+  .header, .main-navigation, .hamburger, span:nth-child(1) {
     top: 0;
   }
-  .header .main-navigation .hamburger span:nth-child(2) {
+  .header, .main-navigation, .hamburger, span:nth-child(2) {
     top: 15px;
   }
-  .header .main-navigation .hamburger span:nth-child(3) {
+  .header, .main-navigation, .hamburger, span:nth-child(3) {
     top: 30px;
   }
-  .header .main-navigation .hamburger.open span:nth-child(1) {
+  .header, .main-navigation, .hamburger.open, span:nth-child(1) {
     top: 15px;
     transform: rotate(135deg);
   }
-  .header .main-navigation .hamburger.open span:nth-child(2) {
+  .header, .main-navigation, .hamburger.open, span:nth-child(2) {
     display: none;
   }
-  .header .main-navigation .hamburger.open span:nth-child(3) {
+  .header, .main-navigation, .hamburger.open, span:nth-child(3) {
     top: 15px;
     transform: rotate(-135deg);
   }
-  .header .main-navigation a.donate {
+  .header, .main-navigation, a.donate {
     background-color: #f6914a;
     color: white;
     font-family: 'Roboto Bold';
@@ -2821,7 +2821,7 @@
     text-transform: uppercase;
     width: 116px;
   }
-  .header .main-navigation a.donate:hover {
+  .header, .main-navigation, a.donate:hover {
     background: #ffdaa6;
     color: #f6914a;
   }
@@ -2830,31 +2830,31 @@
       .header .max-width {
       padding-right: 0;
     }
-      .header .contact-links {
+      .header, .contact-links {
       height: 41px;
       line-height: 41px;
     }
-      .header .contact-links a.call {
+      .header, .contact-links, a.call {
       display: none;
     }
-      .header .contact-links a {
+      .header, .contact-links, a {
       font-size: 18px;
       line-height: 41px;
     }
-      .header .contact-links a.directions {
+      .header, .contact-links, a.directions {
       margin-right: 1px;
     }
-      .header .contact-links i {
+      .header, .contact-links, i {
       font-size: 24px;
       line-height: normal;
     }
-      .header .main-navigation {
+      .header, .main-navigation {
       height: 61px;
     }
-      .header .main-navigation a.logo-link {
+      .header, .main-navigation, a.logo-link {
       margin: -25px 0 0 5px;
     }
-      .header .main-navigation img.logo {
+      .header, .main-navigation, img.logo {
       padding: 0;
       margin: 0;
       border: 5px solid white;

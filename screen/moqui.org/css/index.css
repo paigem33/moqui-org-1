@@ -4,7 +4,7 @@ body  {
 	background: none;
 }
 
-.vertical-navigator  ul.navigator-links li#homeNavItem a.nav-link {
+.vertical-navigator, ul.navigator-links, li#homeNavItem, a.nav-link {
 	color: #60cbd7;
 }
 
@@ -17,14 +17,14 @@ body  {
 	display: none;
 }
 
-.home-video-wrapper  .big-buttons {
+.home-video-wrapper, .big-buttons {
 	display: none;
 }
 
 .tile-background {
 	padding-top: 55px;
 	background-color: #2ac6df;
-	background-image: url('img/gnd-tile.jpg');
+	background-image: url(../images/gnd-tile.jpg);
 	background-position: center 320px;
 	background-repeat: repeat-y;
 	background-size: contain;
@@ -98,7 +98,7 @@ a.home-button span {
 		margin-bottom: 0
 	}
 
-	.home-video-wrapper .home-video-inner {
+	.home-video-wrapper, .home-video-inner {
 		background-color: #666;
 		background-image: url(img/home_video_placeholder_1200x699.jpg);
 		background-repeat:  no-repeat;
@@ -148,16 +148,16 @@ a.home-button span {
 	}
 
 
-	.tile-background .lotus-background {
+	.tile-background, .lotus-background {
 		width: 100%;
-		background-image: url(img/lotus1200x533.png);
+		background-image: url(../images/gnd-tile.png);
 		background-position: center 320px;
 		background-size: contain;
 		background-repeat: no-repeat;
 	}
 
 
-	.tile-background .lotus-background main.main-content.home {
+	.tile-background, .lotus-background, main.main-content.home {
 		max-width: 1090px;
 		margin-right: auto;
 		margin-left: auto;
@@ -169,7 +169,7 @@ a.home-button span {
 		display: none;
 	}
 
-	main.main-content section.see-through-background h1.module-header {
+	main.main-content, section.see-through-background, h1.module-header {
 		font-size: 48px;
 	}
 
@@ -186,13 +186,13 @@ a.home-button span {
 	top: 0;
 	display: block;
 	transition: transform 0.7s .3s ease;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translate3d(0px, 0px, 0px);
+	backface-visibility: hidden;
+	transform: translate3d(0px, 0px, 0px);
   }
 
 #header.hide-nav-bar {
 	transform: translate(0, -100%);
-	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
 .splash-wrapper.home {
@@ -202,7 +202,7 @@ a.home-button span {
 	margin: 0
 }
 
-.splash-wrapper.home .splash-inner.home {
+.splash-wrapper.home, .splash-inner.home {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -213,7 +213,7 @@ a.home-button span {
 	top: 0;
 	width: 100%;
 	min-height: 149px;
-	background-image: url('img/home-splash-image.jpg');
+	background-image: url(../images/home-splash-image.jpg);
 	background-color: #7a7777;
 }
 
@@ -223,7 +223,7 @@ a.home-button span {
 	padding-bottom: 28px
 }
 
-.tile-background main.main-content.home {
+.tile-background, main.main-content.home {
 	margin-right: auto;
 	margin-left: auto;
 	padding-left: 2%;

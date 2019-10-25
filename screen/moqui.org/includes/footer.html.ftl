@@ -56,16 +56,16 @@
                     <div class="flex">
                         <a href="/donate.html" class="donate">Donate</a>
                         <a href="https://www.facebook.com/gurunanakdwara/" class="social-media" title="GND Facebook Page" target="_blank">
-                            <i class="fab fa-facebook"></i>
+                            <i class="fa fab fa-facebook"></i>
                         </a>
                         <a href="https://www.instagram.com/gurunanakdwara/" class="social-media" title="GND Instagram Page" target="_blank">
-                            <i class="fab fa-instagram"></i>
+                            <i class="fa fab fa-instagram"></i>
                         </a>
                         <a href="https://www.youtube.com/c/GuruNanakDwara" class="social-media" title="GND YouTube Channel" target="_blank">
-                            <i class="fab fa-youtube"></i>
+                            <i class="fa fab fa-youtube"></i>
                         </a>
                         <a href="https://twitter.com/gurunanakdwara" class="social-media" title="GND Twitter Page" target="_blank">
-                            <i class="fab fa-twitter-square"></i>
+                            <i class="fa fab fa-twitter-square"></i>
                         </a>
                     </div>
                 </section>

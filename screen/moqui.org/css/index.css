@@ -24,7 +24,7 @@ body  {
 .tile-background {
 	padding-top: 55px;
 	background-color: #2ac6df;
-	background-image: url('images/gnd-tile.jpg');
+	background-image: url(../images/gnd-tile.jpg);
 	background-position: center 320px;
 	background-repeat: repeat-y;
 	background-size: contain;
@@ -150,7 +150,7 @@ a.home-button span {
 
 	.tile-background, .lotus-background {
 		width: 100%;
-		background-image: url(images/gnd-tile.png);
+		background-image: url(../images/gnd-tile.png);
 		background-position: center 320px;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -213,7 +213,7 @@ a.home-button span {
 	top: 0;
 	width: 100%;
 	min-height: 149px;
-	background-image: url('images/home-splash-image.jpg');
+	background-image: url(../images/home-splash-image.jpg);
 	background-color: #7a7777;
 }
 

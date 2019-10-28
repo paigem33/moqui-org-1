@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <link href="/css/index.css" rel="stylesheet"/>
+        <link href="/css/main.css" rel="stylesheet"/>
+
+        
+<screen require-authentication="anonymous-all"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/xml-screen-2.1.xsd">
+
+    <transition name="createCCOSApplication">
+        <service-call name="ExampleServices.create#CCOSApplication"/>
+        <default-response url="."/>
+    </transition>
+
+    <actions>
+    </actions>
+
+    <widgets>
+    <label type="h1" text="Credit Application"/>
+    <form-single name="CreditApp" transition="createCCOSApplication">
+        <field name="firstName"><default-field><text-line/></default-field></field>
+        <field name="middleInitial"><default-field><text-line/></default-field></field>
+        <field name="lastName"><default-field><text-line/></default-field></field>
+        <field name="submitButton"><default-field title="Submit"><submit/></default-field></field>
+    </form-single>
+    </widgets>
+</screen>

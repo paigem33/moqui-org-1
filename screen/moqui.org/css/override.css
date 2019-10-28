@@ -108,7 +108,6 @@ h1:target, h2:target, h3:target { display: inline-block; padding-top: 108px; mar
 /* TODO: fix spacing of li in main-nav - currently over lapping logo at vertical tablet size */
 
 body {
-  max-width: 1010px;
   margin:auto;
 }
 
@@ -376,7 +375,6 @@ footer form button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 50%;
   padding-right: 1.5rem;
 }
 .footer-icons .donateBtn {
@@ -390,6 +388,120 @@ footer form button:hover {
 
 
 /* end footer */
+
+/* Body */
+  
+.tile-background {
+  background: url("../images/components/index/gnd-tile.jpg");
+  background-color: #2ac6df;
+  background-position: center 320px;
+  background-repeat: repeat-y;
+  background-size: contain;
+  margin: auto;
+  padding: 0 0 28px;
+}
+.lotus-background {
+  width: 100%;
+  background-image: url("../images/components/index/lotus1200x533.png");
+  background-position: center 320px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.nobreak {
+  white-space: no-wrap;
+}
+.see-through-background {
+  background-color: rgba(0,0,0,.55);
+  border-radius: 8px;
+  padding: 10px 9px;
+  margin: 0 2% 29px;
+  color: #fcf4c9;
+  max-width: 1050px;
+}
+.see-through-background p {
+  line-height: 29px;
+  font-size: 16px;
+}
+h1.module-header {
+  font-size: 30px;
+  text-align: center;
+  margin: 0 0 8px 0;
+}
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-bottom: 16px;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.attend-service p {
+  margin: auto;
+  max-width: 296px;
+}
+.attend-service > p, .our-practice p {
+  text-align: center;
+}
+.attend-service img {
+  display: block;
+  margin: 0 auto 5px;
+  max-width: 296px;
+  width: 100%;
+}
+.attend-service ol, .our-practice ol {
+  list-style-type: none;
+}
+.attend-service .step {
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+.our-practice .practice {
+  margin: 15px 0;
+}
+.our-practice img {
+  max-width: 296px;
+  display: block;
+  margin: auto;
+}
+.group-text {
+  margin-top: 6px;
+}
+.our-practice p {
+  line-height: 29px;
+  margin: 0 0 5px 0;
+}
+.our-practice .practices-title {
+  font-size: 25px;
+}
+.our-practice .practices-description {
+  font-size: 17px;
+}
+.see-through-background a.button {
+  background: #0076a2;
+  color: white;
+  display: block;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 14px;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 140px;
+}
+.welcome-to-gnd p, .start-serving p, .history p {
+  margin: 16px 0;
+}
+  
+
+/* End body */
 
 /* --- Media queries --- */
 
@@ -508,12 +620,72 @@ footer form button:hover {
   footer div form {
     margin: 0 30px 0 0;
   }
+  .footer-icons {
+    max-width: 50%;
+  }
   footer p:last-of-type {
     padding-bottom: 25px;
   }
 
   /* End footer */
 
+  /* Body */
+
+  .tile-background {
+    padding-top: 55px;
+  }
+  .see-through-background {
+    padding: 10px 40px;
+    margin-bottom: 63px;
+  }
+  h1.module-header {
+    font-size: 48px;
+  }
+  .video {
+    padding: 0 20% 19px;
+  }
+  .attend-service > p {
+    max-width: none;
+  }
+  .attend-service ol {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .attend-service li {
+    width: 50%;
+  }
+  .attend-service li:nth-child(even){
+    margin-top: 80px;
+  }
+  .our-practice .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .our-practice .practice {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .our-practice img {
+    max-width: 200px;
+  }
+  .start-serving {
+    padding-bottom: 63px;
+  }
+  .start-serving p {
+    text-align: center;
+  }
+  .desktop-break {
+    display: block;
+  }
+
+  /* end Body */
+
+}
+
+@media screen and (min-width:1050px){
+  .see-through-background {
+    margin: 0 auto 63px;
+  }
 }
 
 

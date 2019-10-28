@@ -50,15 +50,15 @@
 
             <div class="top-info">
                 <div class="container">
-                        <a href="/docs/moqui/Community+Guide" target="_blank" class="onMobile">
+                        <a href="tel:1-602.632.9598" target="_blank" class="onMobile">
                             <span>Call Now</span>
                             <i class="fas fa-phone fa-fw"></i>
                         </a>
-                        <a href="/docs/moqui/Community+Guide" target="_blank">
+                        <a href="/contact.html" target="_blank">
                             <span>Contact Us</span>
                             <i class="far fa-envelope fa-fw"></i>
                         </a>
-                        <a href="/docs/moqui/Community+Guide" target="_blank">
+                        <a href="https://www.google.com/maps/place/Guru+Nanak+Dwara/@33.4754179,-112.0654331,14.37z/data=!4m5!3m4!1s0x872b125f9d3f800b:0x4952a3dc1c4406b7!8m2!3d33.4733031!4d-112.0621051" target="_blank">
                             <span>Directions</span>
                             <i class="fas fa-map-marker-alt fa-fw"></i>
                         </a>
@@ -69,7 +69,7 @@
             <div class="main-nav fixed-pos">
                 <nav class="container">
                     <div class="logo">
-                        <a href="/index.html"><img class="logo-img" src="/gnd-logo.svg" alt="Moqui Logo"></a>
+                        <a href="/"><img class="logo-img" src="/gnd-logo.svg" alt="GND Logo"></a>
                     </div>
                     <ul class="" id="navigation-box">
                         <a id="navigation-toggle" href="#">
@@ -78,40 +78,40 @@
                         <ul id="navigation">
                             <li<#if menu_active! == "home" || menu_active! == "mantle" || menu_active! == "applications" || menu_active! == "addons"> class="active-item"</#if>>
                                 <#--  <span class="sub-nav-toggle plus"></span>  -->
-                                <a href="/index.html">Home</a>
+                                <a href="/">Home</a>
                             </li>
                             <li<#if menu_active! == "newHere" || menu_active! == "mantle" || menu_active! == "applications" || menu_active! == "addons"> class="active-item"</#if>>
-                                <a href="/index.html">New Here</a>
+                                <a href="/newhere.html">New Here</a>
                             </li>
                             <li<#if menu_active! == "events" || menu_active! == "mantle" || menu_active! == "applications" || menu_active! == "addons"> class="active-item"</#if>>
-                                <a href="/index.html">Events</a>
+                                <a href="/events.html">Events</a>
                             </li>
                             <li<#if menu_active! == "calendar" || menu_active! == "mantle" || menu_active! == "applications" || menu_active! == "addons"> class="active-item"</#if>>
-                                <a href="/index.html">Calendar</a>
+                                <a href="/events.html">Calendar</a>
                             </li>
                             <li<#if menu_active! == "startServing" || menu_active! == "mantle" || menu_active! == "applications" || menu_active! == "addons"> class="active-item"</#if>>
-                                <a href="/index.html">Start Serving</a>
+                                <a href="/startserving.html">Start Serving</a>
                             </li>
                             <li<#if menu_active! == "photos" || menu_active! == "mantle" || menu_active! == "applications" || menu_active! == "addons"> class="active-item"</#if>>
-                                <a href="/index.html">Photos</a>
+                                <a href="/photos.html">Photos</a>
                             </li>
                             <ul class="onMobile">
                                 <li>
-                                    <a href="/index.html"><i class="fab fa-facebook"></i></a>
+                                    <a href="https://www.facebook.com/gurunanakdwara/" title="GND Facebook Page" target="_blank"><i class="fab fa-facebook"></i></a>
                                 </li>
                                 <li>
-                                    <a href="/index.html"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.instagram.com/gurunanakdwara/" title="GND Instagram Page" target="_blank"><i class="fab fa-instagram"></i></a>
                                 </li>
                                 <li>
-                                    <a href="/index.html"><i class="fab fa-youtube"></i></a>
+                                    <a href="https://www.youtube.com/c/GuruNanakDwara" title="GND YouTube Channel" target="_blank"><i class="fab fa-youtube"></i></a>
                                 </li>
                                 <li>
-                                    <a href="/index.html"><i class="fab fa-twitter-square"></i></a>
+                                    <a href="https://twitter.com/gurunanakdwara" title="GND Twitter Page" target="_blank"><i class="fab fa-twitter-square"></i></a>
                                 </li>
                             </ul>
                         </ul>
                         <div>
-                            <a href="/index.html" class="donateBtn">Donate</a>
+                            <a href="/donate.html" class="donateBtn">Donate</a>
                         </div>
                         
                     </div>

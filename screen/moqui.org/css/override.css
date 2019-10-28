@@ -305,22 +305,24 @@ ul#navigation > li::after {
 /* END HEADER */
 
 /* footer */
-footer {
+.footer {
   padding: 20px 10px;
+  max-width: 1050px;
+  margin: 0 2%;
 }
-footer p {
+.footer p {
   text-transform: uppercase;
   font-weight: bold;
   padding-bottom: 15px;
 }
-footer p:last-of-type {
+.footer p:last-of-type {
   margin-bottom: 10px;
 }
-footer form {
+.footer form {
   display: flex;
   margin-bottom: 20px;
 }
-footer form input {
+.footer form input {
   width: 55%;
   border: 1px solid #acacac;
   color: #acacac;
@@ -329,14 +331,14 @@ footer form input {
   line-height: 30px;
   font-size: 11px;
 }
-footer form input::placeholder {
+.footer form input::placeholder {
   color: #acacac;
   opacity: 1;
 }
-footer form input:focus {
+.footer form input:focus {
   border: solid 1px #7e9ab6;
 }
-footer form button {
+.footer form button {
   width: 45%;
   background-color: #0076a2;
   border: none;
@@ -347,7 +349,7 @@ footer form button {
   font-size: 11px;
   height: 30px;
 }
-footer form button:hover {
+.footer form button:hover {
   color: #0076a2;
   background-color: #ebebeb;
 }
@@ -384,6 +386,16 @@ footer form button:hover {
 .footer-icons i {
   font-size: 35px;
   color: #0a2f6c;
+}
+.footerSecondary {
+  background: #959595;
+  color: white;
+  font-size: 12px;
+  padding: 35px 5px;
+}
+.footerSecondary p {
+  margin: auto;
+  max-width: 480px;
 }
 
 
@@ -611,19 +623,20 @@ h1.module-header {
 
   /* Footer */
 
-  footer div {
+  
+  .footer div {
     display: flex;
   }
-  footer div form, .footer-nav {
+  .footer div form, .footer-nav {
     width: 50%;
   }
-  footer div form {
+  .footer div form {
     margin: 0 30px 0 0;
   }
   .footer-icons {
     max-width: 50%;
   }
-  footer p:last-of-type {
+  .footer p:last-of-type {
     padding-bottom: 25px;
   }
 
@@ -685,6 +698,9 @@ h1.module-header {
 @media screen and (min-width:1050px){
   .see-through-background {
     margin: 0 auto 63px;
+  }
+  .footer {
+    margin: auto;
   }
 }
 

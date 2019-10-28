@@ -1,27 +1,224 @@
-<?xml version="1.0" encoding="UTF-8"?>
-        <link href="/css/index.css" rel="stylesheet"/>
-        <link href="/css/main.css" rel="stylesheet"/>
+<head>
+    <link href="/donate.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    
 
-        
-<screen require-authentication="anonymous-all"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/xml-screen-2.1.xsd">
+</head>
+<body class="donate">
+        <header class="header">
+            <div class="max-width">
+                <a href="/" class="logo-link">
+                    <img src="/images/guru.png" alt="Guru Nanak Dwara" class="logo">
+                </a>
+                <span class="secure">SECURE RESPONSE</span>
+            </div>
+        </header>
+        <div class="splash-wrapper">
+            <div class="splash-inner donate">
+                <img src="/images/donate.jpg">
+            </div>
+        </div>
+        <main class="main-content">
+            <div id="payment-form">
+                <form id="donationForm" class="stripe-form">
+                    <fieldset class="amount">
+                        <legend>Donation Amount</legend>
+                        <img src="/images/100-secure.png" alt="100% Secure" class="seal">
+                        <div class="no-padding amount-radios row row-flush">
+                            <div class="donatealign" class="radio col-3 col-md-2">
+                                <input type="radio" name="amount_prefilled" id="rdo-amount-1" value="31" checked="checked" onchange="clearOtherAmount()">
+                                <label for="rdo-amount-1">$31&nbsp;&nbsp;</label>
+                            </div>
+                            <div class="donatealign" class="radio col-3 col-md-2">
+                                <input type="radio" name="amount_prefilled" id="rdo-amount-2" value="51" onchange="clearOtherAmount()">
+                                <label for="rdo-amount-2">$51&nbsp;&nbsp;</label>
+                            </div>
+                            <div class="donatealign" class="radio col-3 col-md-2">
+                                <input type="radio" name="amount_prefilled" id="rdo-amount-3" value="101" onchange="clearOtherAmount()">
+                                <label for="rdo-amount-3">$101&nbsp;</label>
+                            </div>
+                            <div class="donatealign" class="radio col-3 col-md-2">
+                                <input type="radio" name="amount_prefilled" id="rdo-amount-4" value="251" onchange="clearOtherAmount()">
+                                <label for="rdo-amount-4">$251&nbsp;</label>
+                            </div>
+                            <div class="donatealign" class="radio col-3 col-md-2">
+                                <input type="radio" name="amount_prefilled" id="rdo-amount-5" value="501" onchange="clearOtherAmount()">
+                                <label for="rdo-amount-5">$501&nbsp;</label>
+                            </div>
+                            <div class="donatealign" class="radio col-3 col-md-2">
+                                <input type="radio" name="amount_prefilled" id="rdo-amount-6" value="1001" onchange="clearOtherAmount()">
+                                <label for="rdo-amount-6">$1,001&nbsp;</label>
+                            </div>
+                            <div class="donatealign" class="radio col-3 col-md-2">
+                                <input type="radio" name="amount_prefilled" id="rdo-amount-7" value="2001" onchange="clearOtherAmount()">
+                                <label for="rdo-amount-7">$2,001</label>
+                            </div>
+                            <div class="donatealign" class="radio col-3 col-md-2">
+                                <input type="radio" name="amount_prefilled" id="rdo-amount-8" value="3001" onchange="clearOtherAmount()">
+                                <label for="rdo-amount-8">$3,001</label>
+                            </div>
+                            <div class="donatealign" class="radio col-3 col-md-2">
+                                <input type="radio" name="amount_prefilled" id="rdo-amount-9" value="5001" onchange="clearOtherAmount()">
+                                <label for="rdo-amount-9">$5,001</label>
+                            </div>
+                            <div class="radio other-amount-wrapper col-3" onclick="selectOtherRadioButton()">
+                                <span class="other-radio-and-label">
+                                    <input type="radio" name="amount_prefilled" id="rdo-amount-other" value>
+                                    <label for="rdo-amount-other">$</label>
+                                </span>
+                                <input id="amount" class="other-input input" name="amount" type="tel" size="7" maxlength="7" pattern="\d+(\.\d{2})?" placeholder="other" onclick="selectOtherRadioButton()" data-value-missing="Please enter the amount you would like to give" data-pattern-mismatch="Please enter only number of dollars OR dollars and cents">
+                            </div>
+                        </div>
+                        <legend>Frequency</legend>
+                        <div class="monthly-or-one-time-wrapper radio row row-flush">
+                            <div class="donatealign2" class="col col-10 col-md-5">
+                                <input type="radio" name="monthly_or_one_time" id="one-time" value="one-time" checked="checked">
+                                <label for="one-time">One-Time Donation</label>
+                            </div>
+                            <div class="donatealign2" class="col col-10 col-md-5">
+                                <input type="radio" name="monthly_or_one_time" id="monthly" value="monthly">
+                                <label for="monthly">Monthly Donation</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="contact info">
+                        <legend>Contact Information</legend>
+                        <div class="row row-flush flex-required">
+                            <div class="field col-9">
+                                <label for="example2-first_name" class="label-placeholder">First Name<sup>*</sup></label>
+                                <input id="example2-first_name" name="first_name" class="input no-placeholder" type="text" pattern=".{2,}" required data-value-missing="Please enter your First Name" data-pattern-mismatch="Please re-enter your First Name" placeholder="First Name">
+                            </div>
+                            <div class="field col-3">
+                                <label for="example2-middle_initial" class="label-placeholder">M.I.<sup></sup></label>
+                                <input id="example2-middle_initial" name="middle_initial" size="2" class="input no-placeholder" type="text" placeholder="M.I.">
+                            </div>
+                            <div class="field col-12">
+                                <label for="example2-last_name" class="label-placeholder">Last Name<sup>*</sup></label>
+                                <input id="example2-last_name" name="last_name" class="input no-placeholder" type="text" pattern=".{2,}" required data-value-missing="Please enter your Last Name" data-pattern-mismatch="Please re-enter your Last Name" placeholder="Last Name">
+                            </div>
+                            <div class="field col-12">
+                                <label for="email" class="label-placeholder">Email Address<sup>*</sup></label>
+                                <input id="email" name="email" size="30" class="input no-placeholder" type="email" required data-value-missing="Please enter your Email Address" data-pattern-mismatch="Please enter a valid Email Address" placeholder="Email Address">
+                            </div>
+                            <div class="field col-12">
+                                <label for="phone" class="label-placeholder">Phone Number<sup>*</sup></label>
+                                <input id="phone" name="phone" class="input no-placeholder" type="tel" required pattern="\d{3}[\-]{0,1}\d{3}[\-]{0,1}\d{4}" data-value-missing="Please enter 10-digit Phone Number" data-pattern-mismatch="Please enter 10-digit Phone Number" placeholder="Phone Number">
+                            </div>
+                            <div class="field col-12 col-md-9">
+                                <label for="address_line1" class="label-placeholder">Residential Address<sup>*</sup></label>
+                                <input id="address_line1" name="address_line1" size="30" class="input no-placeholder" type="text" required pattern=".{3,}" data-value-missing="Please enter your Address" data-pattern-mismatch="Please enter a valid Address" placeholder="Residential Address">
+                            </div>
+                            <div class="field col-6 col-md-3">
+                                <label for="example2-address_line2" class="label-placeholder">Apt. #, Unit #
+						<sup></sup></label>
+                                <input id="example2-address_line2" name="address_line2" class="input no-placeholder" type="text" placeholder="Apt. #, Unit #">
+                            </div>
+                            <div class="field col-6 col-md-3">
+                                <label for="address_zip" class="label-placeholder">ZIP Code<sup>*</sup></label>
+                                <input id="address_zip" class="input no-placeholder" name="address_zip" type="tel" pattern="[0-9]{5}" required data-value-missing="Please enter your ZIP Code" data-pattern-mismatch="Please enter a valid ZIP Code" placeholder="ZIP Code">
+                            </div>
+                            <div class="field col-12 col-md-6">
+                                <label for="address_city" class="label-placeholder">City<sup>*</sup></label>
+                                <input id="address_city" class="input no-placeholder" name="address_city" type="text" required pattern=".{2,}" data-value-missing="Please enter your City" data-pattern-mismatch="Please enter a valid City" placeholder="City">
+                            </div>
+                            <div class="field col-6 col-md-3">
+                                <label for="address_state" class="label-placeholder">State<sup>*</sup></label>
+                                <select id="address_state" class="input no-placeholder" name="address_state" required data-value-missing="Please select your State">
+                                    <option class="blank label"></option>
+                                    <option value="AL" class="state">Alabama</option>
+                                    <option value="AK" class="state">Alaska</option>
+                                    <option value="AZ" class="state">Arizona</option>
+                                    <option value="AR" class="state">Arkansas</option>
+                                    <option value="CA" class="state">California</option>
+                                    <option value="CO" class="state">Colorado</option>
+                                    <option value="CT" class="state">Connecticut</option>
+                                    <option value="DE" class="state">Delaware</option>
+                                    <option value="DC" class="state">District Of Columbia</option>
+                                    <option value="FL" class="state">Florida</option>
+                                    <option value="GA" class="state">Georgia</option>
+                                    <option value="HI" class="state">Hawaii</option>
+                                    <option value="ID" class="state">Idaho</option>
+                                    <option value="IL" class="state">Illinois</option>
+                                    <option value="IN" class="state">Indiana</option>
+                                    <option value="IA" class="state">Iowa</option>
+                                    <option value="KS" class="state">Kansas</option>
+                                    <option value="KY" class="state">Kentucky</option>
+                                    <option value="LA" class="state">Louisiana</option>
+                                    <option value="ME" class="state">Maine</option>
+                                    <option value="MD" class="state">Maryland</option>
+                                    <option value="MA" class="state">Massachusetts</option>
+                                    <option value="MI" class="state">Michigan</option>
+                                    <option value="MN" class="state">Minnesota</option>
+                                    <option value="MS" class="state">Mississippi</option>
+                                    <option value="MO" class="state">Missouri</option>
+                                    <option value="MT" class="state">Montana</option>
+                                    <option value="NE" class="state">Nebraska</option>
+                                    <option value="NV" class="state">Nevada</option>
+                                    <option value="NH" class="state">New Hampshire</option>
+                                    <option value="NJ" class="state">New Jersey</option>
+                                    <option value="NM" class="state">New Mexico</option>
+                                    <option value="NY" class="state">New York</option>
+                                    <option value="NC" class="state">North Carolina</option>
+                                    <option value="ND" class="state">North Dakota</option>
+                                    <option value="OH" class="state">Ohio</option>
+                                    <option value="OK" class="state">Oklahoma</option>
+                                    <option value="OR" class="state">Oregon</option>
+                                    <option value="PA" class="state">Pennsylvania</option>
+                                    <option value="RI" class="state">Rhode Island</option>
+                                    <option value="SC" class="state">South Carolina</option>
+                                    <option value="SD" class="state">South Dakota</option>
+                                    <option value="TN" class="state">Tennessee</option>
+                                    <option value="TX" class="state">Texas</option>
+                                    <option value="UT" class="state">Utah</option>
+                                    <option value="VT" class="state">Vermont</option>
+                                    <option value="VA" class="state">Virginia</option>
+                                    <option value="WA" class="state">Washington</option>
+                                    <option value="WV" class="state">West Virginia</option>
+                                    <option value="WI" class="state">Wisconsin</option>
+                                    <option value="WY" class="state">Wyoming</option>
+                                    <option value="AS" class="state">American Samoa</option>
+                                    <option value="GU" class="state">Guam</option>
+                                    <option value="MP" class="state">Northern Mariana Islands</option>
+                                    <option value="PR" class="state">Puerto Rico</option>
+                                    <option value="UM" class="state">United States Minor Outlying Islands</option>
+                                    <option value="VI" class="state">Virgin Islands</option>
+                                    <option value="AA" class="state">Armed Forces Americas</option>
+                                    <option value="AP" class="state">Armed Forces Pacific</option>
+                                    <option value="AE" class="state">Armed Forces Others</option>
+                                </select>
+                            </div>
+                        </div>
+                        <label for="mailing_list" class="with-square-checkbox">
+                            <input type="checkbox" checked id="mailing_list" name="mailing_list" value="mailing_list_yes">
+                            <span class="fa fa-check"></span>
+                            <p class="send-me-caption">Send me newsletters about <span class="nowrap">Guru Nanak Dwara.</span></p>
+                        </label>
+                    </fieldset>
+                    <fieldset class="card info">
+                        <legend>Card Information</legend>
+                        <div id="card-one-liner" class="stripe-input-wrapper"></div>
+                        <div class="error" role="alert">
+                            <span class="message"></span>
+                        </div>
+                        <button id="submit-button" type="submit">Submit Donation</button>
+                        <input type="hidden" id="redirectInput" name="redirect" value>
+                        <script>
+				const currentURL = window.location.href.toString();
+				let redirectURL = currentURL.replace('donate.html', 'donate-thankyou.html');
+				document.getElementById('redirectInput').setAttribute('value', redirectURL);
 
-    <transition name="createCCOSApplication">
-        <service-call name="ExampleServices.create#CCOSApplication"/>
-        <default-response url="."/>
-    </transition>
-
-    <actions>
-    </actions>
-
-    <widgets>
-    <label type="h1" text="Credit Application"/>
-    <form-single name="CreditApp" transition="createCCOSApplication">
-        <field name="firstName"><default-field><text-line/></default-field></field>
-        <field name="middleInitial"><default-field><text-line/></default-field></field>
-        <field name="lastName"><default-field><text-line/></default-field></field>
-        <field name="submitButton"><default-field title="Submit"><submit/></default-field></field>
-    </form-single>
-    </widgets>
-</screen>
+				$("form").submit(function () {
+					$("#submit-button").text('Thank You').prop('disabled', true);
+				});
+			</script>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        <footer class="non-profit">
+            <p>Guru Nanak Dwara is a tax-exempt 501c(3) non-profit charitable organization. Every generous donation is tax deductible in the USA.</p>
+        </footer>
+        <script src="js/main.js"></script>
+        <script src="js/donate.js"></script>
+    </body>

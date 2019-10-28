@@ -43,7 +43,7 @@
                                 <span></span>
                                 <span></span>
                             </div>
-                            <a href="/donate.html" class="donate">Donate</a>
+                            <a href="/includes/donate.html" class="donate">Donate</a>
                         </div>
                     </div>
                     <nav class="vertical-navigator" role="navigation" data-node-name="verticalNavigatorNode">

@@ -1,30 +1,19 @@
-<!DOCTYPE html>
-<html lang="en-us">
 <head>
-    <meta charset="utf-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Guru Nanak Dwara Home</title>
         <link href="css/main.css" rel="stylesheet">
-        <link rel="image_src" type="image/png" href="/img/gnd-image-src.png">
-        <meta property="og:image" content="/img/gnd-image-src.png">
-        <meta name="twitter:image" content="/img/gnd-image-src.png">
+        <link href="index.css" rel="stylesheet">
+        <link rel="image_src" type="image/png" href="/images/gnd-image-src.png">
+        <meta property="og:image" content="/images/gnd-image-src.png">
+        <meta name="twitter:image" content="/images/gnd-image-src.png"><!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-NRMZ36R');</script><!-- End Google Tag Manager -->
-        <!--<link href="/css/override.css" rel="stylesheet"/> -->
-        <link href="/css/index.css" rel="styleheet"/>
-        <link href="/css/main.css" rel="styleheet"/>
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-
         <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-        <!--<link href="mantle.html" /> -->
         </head>
-    <body>
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRMZ36R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    
+    <body><!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRMZ36R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) --
+-->
         <header class="header" id="header">
             <div class="contact-links">
                 <div class="max-width">
@@ -33,82 +22,78 @@
                         <i class="fa fas fa-phone fa-fw"></i>
                     </a>
                     <a href="/contact.html" class="contact">
-                        <span>Contact Us</i></span>
-                        <i class="fa far fa-envelope fa-spin" style="color: red;"></i>
+                        <span>Contact Us</span>
+                        <i class="fa far fa-envelope"></i>
                     </a>
                     <a href="https://www.google.com/maps/place/Guru+Nanak+Dwara/@33.4754179,-112.0654331,14.37z/data=!4m5!3m4!1s0x872b125f9d3f800b:0x4952a3dc1c4406b7!8m2!3d33.4733031!4d-112.0621051" target="_blank" class="directions">
                         <span>Directions</span>
-                        <i class="fa fas fa-map-pin fa-2x" style="color:#e134eb;" ></i>
+                        <i class="fa fas fa-map-marker-alt"></i>
                     </a>
                 </div>
             </div>
-                <div class="main-navigation">
-                    <div class="max-width">
-                        <div class="logo-hamburger-donate">
-                            <a href="/" class="logo-link">
+            <div class="main-navigation">
+                <div class="max-width">
+                    <div class="logo-hamburger-donate">
+                        <a href="/" class="logo-link">
                             <img src="/images/guru.png" alt="Guru Nanak Dwara" class="logo">
-                            </a>
-                            <div class="hamburger-and-donate">
+                        </a>
+                        <div class="hamburger-and-donate">
                             <div class="hamburger" aria-expanded="false" data-node-name="hamburgerNode">
                                 <span></span>
                                 <span></span>
                                 <span></span>
                             </div>
-                            
+                            <a href="/donate.html" class="donate">Donate</a>
                         </div>
-                        <nav class="vertical-navigator" role="navigation" data-node-name="verticalNavigatorNode">
-                            <ul class="navigator-links">
-                                <li id="homeNavItem">
-                                    <a href="/" class="nav-link">
-                                    <span>Home</span>
-                                    </a>
-                                </li>
-                                <li id="newhereNavItem">
-                                    <a href="/mantle.html" class="nav-link">
-                                    <span>New Here</span>
-                                    </a>
-                                </li>
-                                <li id="eventsNavItem">
-                                    <a href="/events.html#events" class="nav-link">
-                                    <span>Events</span>
-                                    </a>
-                                </li>
-                                <li id="calendarNavItem">
-                                    <a href="/events.html#calendar" class="nav-link">
-                                    <span>Calendar</span>
-                                    </a>
-                                </li>
-                                <li id="startservingNavItem">
-                                    <a href="/startserving.html" class="nav-link">
-                                    <span>Start Serving</span>
-                                    </a>
-                                </li>
-                                <li id="photosNavItem">
-                                    <a href="/photos.html" class="nav-link">
-                                    <span>Photos</span>
-                                    </a>
-                                    
-                                </li>
-                                <a href="/donate.html" class="donate">Donate</a>
-                            </ul>
-                            <p class="social-media-links">
-                                <a href="https://www.facebook.com/gurunanakdwara/" title="GND Facebook Page" target="_blank">
-                                <i class="fa fab fa-facebook"></i>
-                                </a>
-                                <a href="https://www.instagram.com/gurunanakdwara/" title="GND Instagram Page" target="_blank">
-                                <i class="fa fab fa-instagram"></i>
-                                </a>
-                                <a href="https://www.youtube.com/c/GuruNanakDwara" title="GND YouTube Channel" target="_blank">
-                                <i class="fa fab fa-youtube"></i>
-                                </a>
-                                <a href="https://twitter.com/gurunanakdwara" title="GND Twitter Page" target="_blank">
-                                <i class="fa fab fa-twitter-square"></i>
-                                </a>
-                            </p>
-                        </nav>
                     </div>
+                    <nav class="vertical-navigator" role="navigation" data-node-name="verticalNavigatorNode">
+                        <ul class="navigator-links">
+                            <li id="homeNavItem">
+                                <a href="/" class="nav-link">
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li id="newhereNavItem">
+                                <a href="/newhere.html" class="nav-link">
+                                    <span>New Here</span>
+                                </a>
+                            </li>
+                            <li id="eventsNavItem">
+                                <a href="/events.html#events" class="nav-link">
+                                    <span>Events</span>
+                                </a>
+                            </li>
+                            <li id="calendarNavItem">
+                                <a href="/events.html#calendar" class="nav-link">
+                                    <span>Calendar</span>
+                                </a>
+                            </li>
+                            <li id="startservingNavItem">
+                                <a href="/startserving.html" class="nav-link">
+                                    <span>Start Serving</span>
+                                </a>
+                            </li>
+                            <li id="photosNavItem">
+                                <a href="/photos.html" class="nav-link">
+                                    <span>Photos</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="social-media-links">
+                            <a href="https://www.facebook.com/gurunanakdwara/" title="GND Facebook Page" target="_blank">
+                                <i class="fa fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/gurunanakdwara/" title="GND Instagram Page" target="_blank">
+                                <i class="fa fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/c/GuruNanakDwara" title="GND YouTube Channel" target="_blank">
+                                <i class="fa fab fa-youtube"></i>
+                            </a>
+                            <a href="https://twitter.com/gurunanakdwara" title="GND Twitter Page" target="_blank">
+                                <i class="fa fab fa-twitter-square"></i>
+                            </a>
+                        </p>
+                    </nav>
                 </div>
-                
-        </header>    
-           
-         
+            </div>
+        </header>

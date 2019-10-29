@@ -1,66 +1,72 @@
-<head>
-    <link href="/donate.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    
 
-</head>
-<body class="donate">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <title>Donate - Guru Nanak Dwara</title>
+        <link href="css/main.css" rel="stylesheet">
+        <link href="donate.css" rel="stylesheet">
+        <link rel="image_src" type="image/png" href="/img/gnd-image-src.png">
+        <meta property="og:image" content="/img/gnd-image-src.png">
+        <meta name="twitter:image" content="/img/gnd-image-src.png">
+        <script src="https://js.stripe.com/v3/"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/hyperform/0.9.9/hyperform.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script><!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-NRMZ36R');</script><!-- End Google Tag Manager --></head>
+    <body class="donate">
         <header class="header">
             <div class="max-width">
                 <a href="/" class="logo-link">
-                    <img src="/images/guru.png" alt="Guru Nanak Dwara" class="logo">
+                    <img src="/img/gnd-logo.svg" alt="Guru Nanak Dwara" class="logo">
                 </a>
                 <span class="secure">SECURE RESPONSE</span>
             </div>
         </header>
         <div class="splash-wrapper">
-            <div class="splash-inner donate">
-                <img src="/images/donate.jpg">
-            </div>
+            <div class="splash-inner donate"></div>
         </div>
         <main class="main-content">
-            <div id="payment-form">
+            <div class="stripe-form-wrapper max-width" id="payment-form">
                 <form id="donationForm" class="stripe-form">
                     <fieldset class="amount">
                         <legend>Donation Amount</legend>
-                        <img src="/images/100-secure.png" alt="100% Secure" class="seal">
+                        <img src="/img/100-secure.png" alt="100% Secure" class="seal">
                         <div class="no-padding amount-radios row row-flush">
-                            <div class="donatealign" class="radio col-3 col-md-2">
+                            <div class="radio col-3 col-md-2">
                                 <input type="radio" name="amount_prefilled" id="rdo-amount-1" value="31" checked="checked" onchange="clearOtherAmount()">
                                 <label for="rdo-amount-1">$31&nbsp;&nbsp;</label>
                             </div>
-                            <div class="donatealign" class="radio col-3 col-md-2">
+                            <div class="radio col-3 col-md-2">
                                 <input type="radio" name="amount_prefilled" id="rdo-amount-2" value="51" onchange="clearOtherAmount()">
                                 <label for="rdo-amount-2">$51&nbsp;&nbsp;</label>
                             </div>
-                            <div class="donatealign" class="radio col-3 col-md-2">
+                            <div class="radio col-3 col-md-2">
                                 <input type="radio" name="amount_prefilled" id="rdo-amount-3" value="101" onchange="clearOtherAmount()">
                                 <label for="rdo-amount-3">$101&nbsp;</label>
                             </div>
-                            <div class="donatealign" class="radio col-3 col-md-2">
+                            <div class="radio col-3 col-md-2">
                                 <input type="radio" name="amount_prefilled" id="rdo-amount-4" value="251" onchange="clearOtherAmount()">
                                 <label for="rdo-amount-4">$251&nbsp;</label>
                             </div>
-                            <div class="donatealign" class="radio col-3 col-md-2">
+                            <div class="radio col-3 col-md-2">
                                 <input type="radio" name="amount_prefilled" id="rdo-amount-5" value="501" onchange="clearOtherAmount()">
                                 <label for="rdo-amount-5">$501&nbsp;</label>
                             </div>
-                            <div class="donatealign" class="radio col-3 col-md-2">
+                            <div class="radio col-3 col-md-2">
                                 <input type="radio" name="amount_prefilled" id="rdo-amount-6" value="1001" onchange="clearOtherAmount()">
                                 <label for="rdo-amount-6">$1,001&nbsp;</label>
                             </div>
-                            <div class="donatealign" class="radio col-3 col-md-2">
+                            <div class="radio col-3 col-md-2">
                                 <input type="radio" name="amount_prefilled" id="rdo-amount-7" value="2001" onchange="clearOtherAmount()">
                                 <label for="rdo-amount-7">$2,001</label>
                             </div>
-                            <div class="donatealign" class="radio col-3 col-md-2">
+                            <div class="radio col-3 col-md-2">
                                 <input type="radio" name="amount_prefilled" id="rdo-amount-8" value="3001" onchange="clearOtherAmount()">
                                 <label for="rdo-amount-8">$3,001</label>
                             </div>
-                            <div class="donatealign" class="radio col-3 col-md-2">
+                            <div class="radio col-3 col-md-2">
                                 <input type="radio" name="amount_prefilled" id="rdo-amount-9" value="5001" onchange="clearOtherAmount()">
                                 <label for="rdo-amount-9">$5,001</label>
                             </div>
@@ -72,17 +78,13 @@
                                 <input id="amount" class="other-input input" name="amount" type="tel" size="7" maxlength="7" pattern="\d+(\.\d{2})?" placeholder="other" onclick="selectOtherRadioButton()" data-value-missing="Please enter the amount you would like to give" data-pattern-mismatch="Please enter only number of dollars OR dollars and cents">
                             </div>
                         </div>
-                    
-                        <legend style="padding-left: 14px;">Frequency</legend>
-                        <div>   
-                            <br>
-                            <br>
-                            <br />                         
-                            <div class="donatealign2" style="text-align:left" >
+                        <legend>Frequency</legend>
+                        <div class="monthly-or-one-time-wrapper radio row row-flush">
+                            <div class="col col-10 col-md-5">
                                 <input type="radio" name="monthly_or_one_time" id="one-time" value="one-time" checked="checked">
                                 <label for="one-time">One-Time Donation</label>
                             </div>
-                            <div class="donatealign2" style="justify-content:end">
+                            <div class="col col-10 col-md-5">
                                 <input type="radio" name="monthly_or_one_time" id="monthly" value="monthly">
                                 <label for="monthly">Monthly Donation</label>
                             </div>
@@ -228,3 +230,4 @@
         <script src="js/main.js"></script>
         <script src="js/donate.js"></script>
     </body>
+</html>

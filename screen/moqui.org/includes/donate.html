@@ -2,6 +2,7 @@
     <link href="/donate.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
 </head>
@@ -70,13 +71,17 @@
                                 <input id="amount" class="other-input input" name="amount" type="tel" size="7" maxlength="7" pattern="\d+(\.\d{2})?" placeholder="other" onclick="selectOtherRadioButton()" data-value-missing="Please enter the amount you would like to give" data-pattern-mismatch="Please enter only number of dollars OR dollars and cents">
                             </div>
                         </div>
-                        <legend>Frequency</legend>
-                        <div class="monthly-or-one-time-wrapper radio row row-flush">
-                            <div class="donatealign2" class="col col-10 col-md-5">
+                    
+                        <legend style="padding-left: 14px;">Frequency</legend>
+                        <div>   
+                            <br>
+                            <br>
+                            <br />                         
+                            <div class="donatealign2" style="text-align:left" >
                                 <input type="radio" name="monthly_or_one_time" id="one-time" value="one-time" checked="checked">
                                 <label for="one-time">One-Time Donation</label>
                             </div>
-                            <div class="donatealign2" class="col col-10 col-md-5">
+                            <div class="donatealign2" style="justify-content:end">
                                 <input type="radio" name="monthly_or_one_time" id="monthly" value="monthly">
                                 <label for="monthly">Monthly Donation</label>
                             </div>

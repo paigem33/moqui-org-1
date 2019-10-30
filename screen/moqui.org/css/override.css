@@ -402,7 +402,34 @@ ul#navigation > li::after {
 /* end footer */
 
 /* Body */
-  
+.big-buttons {
+  max-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.big-buttons a {
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 2px;
+  border: 1px solid white;
+  color: white;
+  text-shadow: 0px 0px 2px black;
+  display: block;
+  font-size: 20px;
+  height: 50px;
+  margin: 0 auto 35px auto;
+  opacity: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  min-width: 200px;
+  width: 90%;
+  max-width: 320px;
+}
+.big-buttons a span {
+  display: inline-block;
+  margin-top: 12px;
+  text-align: center;
+  width: 100%;
+}
 .tile-background {
   background: url("../images/components/index/gnd-tile.jpg");
   background-color: #2ac6df;
@@ -410,7 +437,7 @@ ul#navigation > li::after {
   background-repeat: repeat-y;
   background-size: contain;
   margin: auto;
-  padding: 0 0 28px;
+  padding: 36px 0 28px;
 }
 .lotus-background {
   width: 100%;
@@ -644,8 +671,25 @@ h1.module-header {
 
   /* Body */
 
+  .big-buttons {
+    display: flex;
+    justify-content: center;
+    z-index: 11;
+    max-width: none;
+    left: 50%;
+    top: 70%;
+    width: 80%;
+  }
+  .big-buttons a {
+    max-width: 30%;
+  }
+  .big-buttons a:hover {
+    background-color: rgba(255, 255, 255, 0.65);
+    color: #666;
+    text-shadow: none;
+  }
   .tile-background {
-    padding-top: 55px;
+    padding-top:51px;
   }
   .see-through-background {
     padding: 10px 40px;
@@ -682,7 +726,7 @@ h1.module-header {
     max-width: 200px;
   }
   .start-serving {
-    padding-bottom: 63px;
+    padding-bottom: 32px;
   }
   .start-serving p {
     text-align: center;
@@ -692,6 +736,7 @@ h1.module-header {
   }
 
   /* end Body */
+
 
 }
 

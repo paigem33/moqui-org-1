@@ -55,6 +55,7 @@
 </footer>
 
 <script>
+
 $(document).ready(function() {
     <#if menu_active! == "home">
         //Swiper

@@ -542,6 +542,86 @@ h1.module-header {
 
 /* End body */
 
+/* Donation form css */
+
+main.donation {
+  max-width: 1000px;
+  margin: 5px auto 0;
+  padding: 0 10px;
+}
+.donation .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.donation .col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.donation fieldset {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #dadada;
+  font-family: 'Roboto';
+  margin: 0 0 1.5em 0;
+  padding: 1em 10% 1em 10%;
+  position: relative;
+}
+.donation fieldset legend {
+  border-bottom: 1px solid #dadada;
+  color: #6a7897;
+  float: left;
+  font-size: 18px;
+  line-height: 40px;
+  margin: 0 0 0.5em 0;
+  padding: 0 2em 0 0;
+  text-transform: uppercase;
+}
+.donation .amount {
+  padding-bottom: 30px;
+  color: #0a2f6c;
+}
+.donation fieldset.amount div.amount-radios {
+  /* clear: both;
+  padding: 15px; */
+}
+.donation fieldset.amount .radio {
+  padding-left: 0;
+  margin: 16px 0;
+}
+.donation fieldset.amount .radio input {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+.donation fieldset.amount input:checked + label {
+  background-color: #15769f;
+  color: white;
+}
+.donation fieldset.amount label {
+  border-radius: 6px;
+  border: 2px solid #6a7897;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  min-width: 60px;
+  padding: 15px 0;
+  text-align: center;
+  text-shadow: none;
+  text-transform: uppercase;
+  transition: all 0.1s ease-in-out;
+  width: 100%;
+}
+.donation fieldset.amount .other-amount-wrapper {
+  position: relative;
+  height: 60px;
+  padding: 0 1rem 0 0;
+  max-width: 25%;
+}
+/* End donation form css */
+
 /* --- Media queries --- */
 
 @media screen and (min-width: 768px){
@@ -749,7 +829,7 @@ h1.module-header {
   }
 }
 
-
+ 
 /* End media queries */
 
 /* End Style changes */

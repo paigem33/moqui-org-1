@@ -281,6 +281,8 @@ ul#navigation > li::after {
 
 .header-2 .main-nav{
   top: 0;
+  right: 0;
+  left: 0;
 }
 .header-2 .secure-section {
   position: absolute;
@@ -831,5 +833,17 @@ main.donation {
 
  
 /* End media queries */
+
+/* Donate page */
+#content {
+  background-color: #e1e1e1;
+}
+#donateForm fieldset {
+  border: solid 1px #dadada;
+  padding: 15px 10%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+/* end donate page */
 
 /* End Style changes */

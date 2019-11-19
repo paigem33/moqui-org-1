@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="${head_description!""}">
     <meta name="keywords" content="${head_keywords!""}">
-    <title>${head_title!"Moqui Ecosystem"}</title>
+    <title>Guru Nanak Dwara</title>
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -111,7 +111,7 @@
                             </ul>
                         </ul>
                         <div>
-                            <a href="/donate.html" class="donateBtn">Donate</a>
+                            <a href="localhost:8080/vapps/DonationForm" class="donateBtn">Donate</a>
                         </div>
                         
                     </div>

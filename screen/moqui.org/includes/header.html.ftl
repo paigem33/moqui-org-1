@@ -1,105 +1,100 @@
-<!DOCTYPE html>
-<html lang="en-us">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="${head_description!""}">
-    <meta name="keywords" content="${head_keywords!""}">
-    <title>${head_title!"Moqui Ecosystem"}</title>
-
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-
-    <link href="/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-    <link href="/libs/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/style_blue.css" rel="stylesheet">
-
-    <script src="/libs/jquery/jquery.min.js"></script>                <!--Script jQuery-->
-    <script src="/external/jquery/jquery-migrate-1.2.1.min.js"></script>			<!--Script jQuery for old version jQuery-->
-    <script src="/libs/twitter-bootstrap/js/bootstrap.min.js"></script>				<!--Bootstrap JavaScript-->
-    <!-- <script src="/external/jquery-event/jquery.event.drag-2.2.js"></script><script src="/external/jquery-event/jquery.event.drop-2.2.js"></script> -->
-    <script src="/external/jquery-easing/jquery.easing.1.3.js"></script>			<!--Script jquery Easing-->
-    <script src="/external/swiper/idangerous.swiper.min.js"></script>			<!--Script Swiper slider -->
-    <script src="/external/gozha-nav/jquery.mobile.menu.js"></script>			<!--Script Mobile menu-->
-    <script src="/external/modernizr/modernizr.custom.91224.js"></script>		<!--Script Modernizr-->
-    <!-- <script src="/external/colorbox/jquery.colorbox.js"></script> -->
-    <!-- <script src="/js/form.js"></script>											Script Forms -->
-    <script src="/js/custom.js"></script>										<!--Script Custom-->
-
-    <script type="text/javascript" src="/js/shCore.js"></script>
-    <script type="text/javascript" src="/js/shBrushXml.js"></script>
-    <script type="text/javascript" src="/js/shBrushGroovy.js"></script>
-    <link href="/css/shCoreDefault.css" rel="stylesheet" type="text/css"/>
-
-    <script type="text/javascript" src="/libs/jquery-validate/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="/libs/jquery-validate/additional-methods.min.js"></script>
-    <script type="text/javascript" src="/libs/jstree/jstree.min.js"></script>
-    <link href="/libs/jstree/themes/default/style.min.css" rel="stylesheet" type="text/css"/>
-
-    <link href="/css/override.css" rel="stylesheet">
-</head>
-<body>
-<div class="wrapper">
-    <header>
-        <div class="presentation">
-            <div class="main-nav fixed-pos">
-                <nav class="container">
-                    <div class="logo pull-left">
-                        <a href="/index.html"><img class="logo-img moqui-logo" src="/MoquiLogoNew.png" alt="Moqui Logo"></a>
-                    </div>
-                    <div class="pull-right" id="navigation-box">
-                        <a id="navigation-toggle" href="#"><span class="menu-icon"></span></a>
-                        <ul id="navigation">
-                            <li<#if menu_active! == "framework" || menu_active! == "mantle" || menu_active! == "applications" || menu_active! == "addons"> class="active-item"</#if>>
-                                <span class="sub-nav-toggle plus"></span>
-                                <a href="/index.html">Ecosystem</a>
-                                <ul>
-                                    <li<#if menu_active! == "framework"> class="active-item"</#if>><a href="/framework.html">Framework</a></li>
-                                    <li<#if menu_active! == "mantle"> class="active-item"</#if>><a href="/mantle.html">Business Artifacts</a></li>
-                                    <li<#if menu_active! == "applications"> class="active-item"</#if>><a href="/applications.html">Applications</a></li>
-                                    <li<#if menu_active! == "addons"> class="active-item"</#if>><a href="/addons.html">Add ons</a></li>
-                                </ul>
-                            </li>
-                            <li<#if menu_active! == "service"> class="active-item"</#if>><a href="/service.html">Service Providers</a></li>
-                            <li>
-                                <span class="sub-nav-toggle plus"></span>
-                                <a href="/vapps/my/User/Request">Issues &amp; Tasks</a>
-                                <ul>
-                                    <li><a href="/vapps/my">My Account</a></li>
-                                    <li><a href="/vapps/my/User/Request">My Requests (Issues)</a></li>
-                                    <li><a href="/vapps/hm">HiveMind PM</a></li>
-                                </ul>
-                            </li>
-                            <li<#if menu_active! == "docs"> class="active-item"</#if>>
-                                <span class="sub-nav-toggle plus"></span>
-                                <a href="/docs">Documentation</a>
-                                <ul>
-                                    <li><a href="/docs/moqui">Moqui Ecosystem</a></li>
-                                    <li><a href="/docs/framework">Moqui Framework</a></li>
-                                    <li><a href="/docs/mantle">Mantle Business Artifacts</a></li>
-                                    <li><a href="/docs/apps">Applications</a></li>
-                                    <li><a href="/javadoc/index.html" target="_blank">API JavaDoc</a></li>
-                                </ul>
-                            </li>
-                            <li<#if menu_active! == "search"> class="active-item"</#if>><a href="/search">Search</a></li>
-                        </ul>
-                    </div>
-                </nav>
-                <#-- <div class="divider-circle"></div> -->
-            </div>
-            <div class="top-info">
-                <div class="container">
-                    <p class="top-info__text pull-left hidden-xs small">
-                        <a href="https://demo.moqui.org/vapps" target="_blank">Try the applications demo!</a>
-                        <a href="https://demo.moqui.org/store" target="_blank">Try POP Shop eCommerce!</a>
-                    </p>
-                    <p class="top-info__text pull-right small">
-                        Comments? Questions? Get Involved? <a href="/docs/moqui/Community+Guide" target="_blank">Community Guide</a>
-                    </p>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Guru Nanak Dwara Home</title>
+        <link href="css/main.css" rel="stylesheet">
+        <link href="index.css" rel="stylesheet">
+        <link rel="image_src" type="image/png" href="/images/gnd-image-src.png">
+        
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <meta property="og:image" content="/images/gnd-image-src.png">
+        <meta name="twitter:image" content="/images/gnd-image-src.png"><!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-NRMZ36R');</script><!-- End Google Tag Manager -->
+  
+        </head>
+    <body><!-- Google Tag Manager (noscript) -->
+        <!--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRMZ36R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> --><!-- End Google Tag Manager (noscript) --
+-->
+        <header class="header" id="header">
+            <div class="contact-links">
+                <div class="max-width">
+                    <a href="tel:1-602.632.9598" class="call">
+                        <span>Call Now</span>
+                        <i class="fa fas fa-phone fa-fw"></i>
+                    </a>
+                    <a href="/contact.html" class="contact">
+                        <span>Contact Us</span>
+                        <i class="fa far fa-envelope"></i>
+                    </a>
+                    <a href="https://www.google.com/maps/place/Guru+Nanak+Dwara/@33.4754179,-112.0654331,14.37z/data=!4m5!3m4!1s0x872b125f9d3f800b:0x4952a3dc1c4406b7!8m2!3d33.4733031!4d-112.0621051" target="_blank" class="directions">
+                        <span>Directions</span>
+                        <i class="fa fas fa-map-marker-alt"></i>
+                    </a>
                 </div>
             </div>
-        </div>
-    </header>
+            <div class="main-navigation">
+                <div class="max-width">
+                    <div class="logo-hamburger-donate">
+                        <a href="/" class="logo-link">
+                            <img src="/images/guru.png" alt="Guru Nanak Dwara" class="logo">
+                        </a>
+                        <div class="hamburger-and-donate">
+                            <div class="hamburger" aria-expanded="false" data-node-name="hamburgerNode">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <a href="/includes/donate.html" class="donate">Donate</a>
+                        </div>
+                    </div>
+                    <nav class="vertical-navigator" role="navigation" data-node-name="verticalNavigatorNode">
+                        <ul class="navigator-links">
+                            <li id="homeNavItem">
+                                <a href="/" class="nav-link">
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li id="newhereNavItem">
+                                <a href="/newhere.html" class="nav-link">
+                                    <span>New Here</span>
+                                </a>
+                            </li>
+                            <li id="eventsNavItem">
+                                <a href="/events.html#events" class="nav-link">
+                                    <span>Events</span>
+                                </a>
+                            </li>
+                            <li id="calendarNavItem">
+                                <a href="/events.html#calendar" class="nav-link">
+                                    <span>Calendar</span>
+                                </a>
+                            </li>
+                            <li id="startservingNavItem">
+                                <a href="/startserving.html" class="nav-link">
+                                    <span>Start Serving</span>
+                                </a>
+                            </li>
+                            <li id="photosNavItem">
+                                <a href="/photos.html" class="nav-link">
+                                    <span>Photos</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="social-media-links">
+                            <a href="https://www.facebook.com/gurunanakdwara/" title="GND Facebook Page" target="_blank">
+                                <i class="fa fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/gurunanakdwara/" title="GND Instagram Page" target="_blank">
+                                <i class="fa fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/c/GuruNanakDwara" title="GND YouTube Channel" target="_blank">
+                                <i class="fa fab fa-youtube"></i>
+                            </a>
+                            <a href="https://twitter.com/gurunanakdwara" title="GND Twitter Page" target="_blank">
+                                <i class="fa fab fa-twitter-square"></i>
+                            </a>
+                        </p>
+                    </nav>
+                </div>
+            </div>
+        </header>

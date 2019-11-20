@@ -863,9 +863,9 @@ input:required:invalid, input:invalid, textarea:invalid {
   position: absolute;
 }
 #donateBody .secure-img {
-  position: relative;
+  position: absolute;
   top: -60px;
-  right: -49%;
+  left: 70%;
 }
 #donateBody, .inner {
   background-color: #e1e1e1;
@@ -917,6 +917,21 @@ input:required:invalid, input:invalid, textarea:invalid {
   display: flex;
   flex-wrap: wrap;
 }
+#donateForm input.active-amount {
+  cursor: pointer;
+  background: #2dd0e8;
+  color: white !important;
+}
+#donateForm input.active-amount.other-amount {
+  border: 2px solid #2dd0e8 !important;
+  background-color: white;
+  color: #6a7897 !important;
+}
+
+/* #donateForm input::before {
+  content: "$";
+  display: inline-block;
+} */
 /* #donateForm .radios input {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -953,7 +968,7 @@ input:required:invalid, input:invalid, textarea:invalid {
   height: 25px;
   border: solid 1px grey;
 }
-#donateForm .radios div:hover, #donateForm .radios input:hover, #donateForm .frequency div:hover {
+#donateForm .radios div:hover, #donateForm .radios input:hover {
   cursor: pointer;
   background: #2dd0e8;
   color: white;
@@ -963,13 +978,13 @@ input:required:invalid, input:invalid, textarea:invalid {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.frequency div {
+.frequency input {
   width: 100%;
 }
-.frequency div:last-of-type {
+.frequency input:last-of-type {
   margin-top: 5px;
 }
-.frequency div {
+.frequency input {
   background-color: white;
   border-radius: 6px;
   border: 2px solid #6a7897;
@@ -984,7 +999,6 @@ input:required:invalid, input:invalid, textarea:invalid {
   text-transform: uppercase;
   transition: all 0.1s ease-in-out;
   width: 100%;
-  padding-left: 28px;
 }
 /* .frequency input {
   border: 0;
@@ -1057,7 +1071,7 @@ input:required:invalid, input:invalid, textarea:invalid {
 
 @media screen and (min-width: 768px){
   #donateBody .secure-img {
-    right: -58%;
+    left: 83%;
   }
   #donateForm #amount {
     left: 72%;
@@ -1068,7 +1082,7 @@ input:required:invalid, input:invalid, textarea:invalid {
   #donateForm .radios div, #donateForm .radios input {
     width: 48%;
   }
-  #donateForm .frequency div {
+  #donateForm .frequency input {
     width: 48%;
     margin: 5px;
   }

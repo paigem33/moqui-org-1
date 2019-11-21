@@ -36,7 +36,7 @@ body  {
 
 .see-through-background.history p {
 	font-weight: normal;
-	font-family: 'Roboto';
+	/* font-family: 'Roboto'; */
 	line-height: 180%;
 }
 

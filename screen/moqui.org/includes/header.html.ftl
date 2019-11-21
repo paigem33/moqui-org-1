@@ -5,8 +5,8 @@
         <link href="css/main.css" rel="stylesheet">
         <link href="index.css" rel="stylesheet">
         <link rel="image_src" type="image/png" href="/images/gnd-image-src.png">
-        
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <#--  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">  -->
         <meta property="og:image" content="/images/gnd-image-src.png">
         <meta name="twitter:image" content="/images/gnd-image-src.png"><!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-NRMZ36R');</script><!-- End Google Tag Manager -->
@@ -24,11 +24,11 @@
                     </a>
                     <a href="/contact.html" class="contact">
                         <span>Contact Us</span>
-                        <i class="fa far fa-envelope"></i>
+                        <i class="far fa-envelope fa-fw"></i>
                     </a>
                     <a href="https://www.google.com/maps/place/Guru+Nanak+Dwara/@33.4754179,-112.0654331,14.37z/data=!4m5!3m4!1s0x872b125f9d3f800b:0x4952a3dc1c4406b7!8m2!3d33.4733031!4d-112.0621051" target="_blank" class="directions">
                         <span>Directions</span>
-                        <i class="fa fas fa-map-marker-alt"></i>
+                        <i class="fas fa-map-marker-alt fa-fw"></i>
                     </a>
                 </div>
             </div>
@@ -60,15 +60,15 @@
                                 </a>
                             </li>
                             <li id="eventsNavItem">
-                                <a href="/events.html#events" class="nav-link">
+                                <a href="/events.html" class="nav-link">
                                     <span>Events</span>
                                 </a>
                             </li>
-                            <li id="calendarNavItem">
+                            <#--  <li id="calendarNavItem">
                                 <a href="/events.html#calendar" class="nav-link">
                                     <span>Calendar</span>
                                 </a>
-                            </li>
+                            </li>  -->
                             <li id="startservingNavItem">
                                 <a href="/startserving.html" class="nav-link">
                                     <span>Start Serving</span>
@@ -82,16 +82,16 @@
                         </ul>
                         <p class="social-media-links">
                             <a href="https://www.facebook.com/gurunanakdwara/" title="GND Facebook Page" target="_blank">
-                                <i class="fa fab fa-facebook"></i>
+                                <i class="fab fa-facebook-square"></i>
                             </a>
                             <a href="https://www.instagram.com/gurunanakdwara/" title="GND Instagram Page" target="_blank">
-                                <i class="fa fab fa-instagram"></i>
+                                <i class="fab fa-instagram"></i>
                             </a>
                             <a href="https://www.youtube.com/c/GuruNanakDwara" title="GND YouTube Channel" target="_blank">
-                                <i class="fa fab fa-youtube"></i>
+                                <i class="fab fa-youtube"></i>
                             </a>
                             <a href="https://twitter.com/gurunanakdwara" title="GND Twitter Page" target="_blank">
-                                <i class="fa fab fa-twitter-square"></i>
+                                <i class="fab fa-twitter-square"></i>
                             </a>
                         </p>
                     </nav>

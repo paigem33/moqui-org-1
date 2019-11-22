@@ -15,11 +15,14 @@ along with this software (see the LICENSE.md file). If not, see
 <screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/xml-screen-2.1.xsd"
         require-authentication="false">
     <pre-actions>
-        <set field="head_keywords" value="moqui,service,provider,consultant,consulting,erp,ecommerce"/>
-        <set field="head_title" value="Moqui Service Providers"/>
-        <set field="menu_active" value="service"/>
+        <set field="head_keywords" value="moqui,framework,java,jee,j2ee,enterprise,groovy,freemarker,ofbiz,service,entity,database,transaction,screen,xml,search,rules,workflow,cache"/>
+        <set field="head_title" value="Moqui Framework"/>
+        <set field="head_title" value="New Here"/>
+        <set field="menu_active" value="newhere"/>
     </pre-actions>
     <widgets>
-        <render-mode><text type="html" location="component://moqui-org/screen/moqui.org/service.html"/></render-mode>
+        <render-mode>
+            <text type="html" location="component://moqui-org/screen/moqui.org/newhere.html"/>
+        </render-mode>
     </widgets>
 </screen>

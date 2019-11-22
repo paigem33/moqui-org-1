@@ -1,9 +1,12 @@
+<#--  TODO: add in similar logic from original header file to determine active navigation item and apply active styling  -->
+<#--  TODO: maybe combine all css files into one instead of multiple files - not sure if that is really beneficial or not  -->
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Guru Nanak Dwara Home</title>
         <link href="css/main.css" rel="stylesheet">
         <link href="index.css" rel="stylesheet">
+        <link href="css/newhere.css" rel="stylesheet">
         <link rel="image_src" type="image/png" href="/images/gnd-image-src.png">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <#--  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">  -->

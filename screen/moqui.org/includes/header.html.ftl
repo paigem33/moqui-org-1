@@ -1,3 +1,5 @@
+<#--  TODO: add in similar logic from original header file to determine active navigation item and apply active styling  -->
+<#--  TODO: maybe combine all css files into one instead of multiple files - not sure if that is really beneficial or not  -->
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">

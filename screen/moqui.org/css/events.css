@@ -3,7 +3,6 @@
 body {
 	background-color: #ebebeb;
 	color: #0a2f6c;
-	font-family: 'Roboto';
 	padding-top:87px;
 }
 
@@ -35,7 +34,7 @@ body {
 	height: 100%;
 	left: 0;
 	position: absolute;
-	top: 0;
+	top: -3px;
 	width: 100%;
 	min-height: 78px;
 	background-image: url('/images/events-splash-image.jpg');

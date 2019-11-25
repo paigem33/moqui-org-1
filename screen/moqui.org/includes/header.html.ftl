@@ -8,6 +8,7 @@
         <link href="/main.css" rel="stylesheet">
         <link href="/index.css" rel="stylesheet">
         <link href="/events.css" rel="stylesheet">
+        <link href="/startserving.css" rel="stylesheet">
 
         <link rel="image_src" type="image/png" href="/images/gnd-image-src.png">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">

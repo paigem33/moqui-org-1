@@ -5,56 +5,56 @@
     <main class="main-content">
         <h1 class="page-heading">Start Serving</h1>
         <p class="startServingFormIntro">As Guru Nanak Dwara functions through the Seva (selfless service) efforts of the Sadh Sangat, please tell us how you’d like to contribute in your own unique way!</p>
-        <form method="post" action="https://api.gurunanakdwara.com/live/start-serving" class="startserving">
+        <form method="post" action="/createRequest" class="startserving">
             <input type="hidden" id="redirect" name="redirect" value>
             <fieldset class="contact">
                 <legend>Contact Information</legend>
                 <div class="row row-flush flex-required">
                     <div class="col col-9 col-md-4">
-                        <label for="firstname">First Name<sup>*</sup></label>
-                        <input name="firstname" type="text" pattern=".{2,}" required data-value-missing="Please enter your First Name" data-pattern-mismatch="Please re-enter your First Name">
+                        <label for="firstName">First Name<sup>*</sup></label>
+                        <input name="firstName" type="text" pattern=".{2,}" required data-value-missing="Please enter your First Name" data-pattern-mismatch="Please re-enter your First Name">
                     </div>
                     <div class="col col-2 offset-1">
-                        <label for="middleinitial">M.I.</label>
-                        <input name="middleinitial" type="text">
+                        <label for="middleName">M.I.</label>
+                        <input name="middleName" type="text">
                     </div>
                     <div class="col col-12 col-md-4 offset-md-1">
-                        <label for="lastname">Last Name<sup>*</sup></label>
-                        <input name="lastname" type="text" pattern=".{2,}" required data-value-missing="Please enter your Last Name" data-pattern-mismatch="Please re-enter your Last Name">
+                        <label for="lastName">Last Name<sup>*</sup></label>
+                        <input name="lastName" type="text" pattern=".{2,}" required data-value-missing="Please enter your Last Name" data-pattern-mismatch="Please re-enter your Last Name">
                     </div>
                 </div>
                 <div class="row row-flush">
                     <div class="col col-12 col-md-6">
-                        <label for="email">Email Address<sup>*</sup></label>
-                        <input name="email" size="30" type="email" required data-value-missing="Please enter your Email Address" data-pattern-mismatch="Please enter a valid Email Address">
+                        <label for="emailAddress">Email Address<sup>*</sup></label>
+                        <input name="emailAddress" size="30" type="email" required data-value-missing="Please enter your Email Address" data-pattern-mismatch="Please enter a valid Email Address">
                     </div>
                     <div class="col col-6 col-md-5 offset-md-1">
-                        <label for="phonenumber">Phone Number<sup>*</sup></label>
-                        <input id="phonenumber" name="phonenumber" class="input" type="tel" required pattern="\d{3}[\-]{0,1}\d{3}[\-]{0,1}\d{4}" data-value-missing="Please enter 10-digit Phone Number" data-pattern-mismatch="Please enter 10-digit Phone Number">
+                        <label for="contactNumber">Phone Number<sup>*</sup></label>
+                        <input id="contactNumber" name="contactNumber" class="input" type="tel" required pattern="\d{3}[\-]{0,1}\d{3}[\-]{0,1}\d{4}" data-value-missing="Please enter 10-digit Phone Number" data-pattern-mismatch="Please enter 10-digit Phone Number">
                     </div>
                 </div>
                 <div class="row row-flush">
                     <div class="col col-12 col-md-6">
-                        <label for="address">Residential Address<sup>*</sup></label>
-                        <input name="address" class="input" type="text" size="35" required pattern=".{3,}" data-value-missing="Please enter your Address" data-pattern-mismatch="Please enter a valid Address">
+                        <label for="address1">Residential Address<sup>*</sup></label>
+                        <input name="address1" class="input" type="text" size="35" required pattern=".{3,}" data-value-missing="Please enter your Address" data-pattern-mismatch="Please enter a valid Address">
                     </div>
                     <div class="col col-12 col-md-5 offset-md-1">
-                        <label for="address2">Apt. #, Unit #</label>
-                        <input name="address2" type="text">
+                        <label for="unitNumber">Apt. #, Unit #</label>
+                        <input name="unitNumber" type="text">
                     </div>
                 </div>
                 <div class="row row-flush">
                     <div class="col col-6 col-md-2">
-                        <label for="zip">ZIP Code<sup>*</sup></label>
-                        <input name="zip" type="tel" pattern="[0-9]{5}" required data-value-missing="Please enter your ZIP Code" data-pattern-mismatch="Please enter a valid ZIP Code">
+                        <label for="postalCode">ZIP Code<sup>*</sup></label>
+                        <input name="postalCode" type="tel" pattern="[0-9]{5}" required data-value-missing="Please enter your ZIP Code" data-pattern-mismatch="Please enter a valid ZIP Code">
                     </div>
                     <div class="col col-12 col-md-4 offset-md-1">
                         <label for="city">City<sup>*</sup></label>
                         <input name="city" type="text" required pattern=".{2,}" data-value-missing="Please enter your City" data-pattern-mismatch="Please enter a valid City">
                     </div>
                     <div class="col col-12 col-md-4 offset-md-1">
-                        <label for="state">State<sup>*</sup></label>
-                        <select name="state" required data-value-missing="Please select your State">
+                        <label for="stateProvinceGeoId">State<sup>*</sup></label>
+                        <select name="stateProvinceGeoId" required data-value-missing="Please select your State">
                             <option class="blank label"></option>
                             <option value="AL" class="state">Alabama</option>
                             <option value="AK" class="state">Alaska</option>
@@ -125,8 +125,8 @@
                 <div class="row row-flush">
                     <section class="ways-to-serve col-md-6">
                         <div class="row row-flush">
-                            <label for="serveoptions">How would you like to start serving?</label>
-                            <select class="serve-options" name="serveoptions">
+                            <label for="requestName">How would you like to start serving?</label>
+                            <select class="serve-options" name="requestName">
                                 <option></option>
                                 <option value="Fundraising" class="serve-option">Fundraising</option>
                                 <option value="Program Development" class="serve-option">Program Development</option>
@@ -144,8 +144,8 @@
                             </select>
                         </div>
                         <div class="row row-flush">
-                            <label for="startservingtextarea">Tell us how you can serve in your own unique way:</label>
-                            <textarea rows="4" name="startservingtextarea"></textarea>
+                            <label for="description">Tell us how you can serve in your own unique way:</label>
+                            <textarea rows="4" name="description"></textarea>
                         </div>
                         <div class="row send-me-newsletters">
                             <label for="mailinglist" class="with-square-checkbox">

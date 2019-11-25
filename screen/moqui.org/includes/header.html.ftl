@@ -8,6 +8,7 @@
         <link href="/main.css" rel="stylesheet">
         <link href="/index.css" rel="stylesheet">
         <link href="/events.css" rel="stylesheet">
+        <link href="/contact.css" rel="stylesheet">
         <link href="/startserving.css" rel="stylesheet">
 
         <link rel="image_src" type="image/png" href="/images/gnd-image-src.png">

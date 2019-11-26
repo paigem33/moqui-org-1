@@ -22,6 +22,7 @@
         </out-parameters>
 
         <actions>
+            <log message="---------------------Service hit-----------------------------"/>
             <!-- Create Person -->
             <service-call name="mantle.party.PartyServices.create#Person" in-map="context" out-map="context"/>
             <!-- Create Contact -->

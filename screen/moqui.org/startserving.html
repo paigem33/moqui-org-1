@@ -6,13 +6,37 @@
         <h1 class="page-heading">Start Serving</h1>
         <p class="startServingFormIntro">As Guru Nanak Dwara functions through the Seva (selfless service) efforts of the Sadh Sangat, please tell us how you’d like to contribute in your own unique way!</p>
         <!-- 
-            Paths tried:
+            Path should be: /screen/subscreen/transition ------------
+            So, it should be: /m/startserving/createRequest
+            Paths tried: -------------------
             /m/startserving/createRequest
             /startserving/createRequest 
             /moqui-org/startserving/createRequest
             /apps/moqui-org/startserving/createRequest
-         -->
-        <form method="post" action="/apps/m/startserving/createRequest" class="startserving">
+            /apps/m/startserving/createRequest
+            /moqui.org/startserving/createRequest
+            /webroot/m/startserving/createRequest
+            /webroot/moqui-org/startserving/createRequest
+            /webroot/moqui-org/startserving.html.xml/createRequest
+            /m/startserving.html.xml/createRequest
+            /webroot/m/startserving.html.xml/createRequest
+            after changing name ------------------
+            /moqui-org/startserving/createRequest
+            /webroot/moqui-org/startserving/createRequest
+            /apps/moqui-org/startserving/createRequest
+            /moqui-framework/runtime/component/moqui-org/screen/moqui.org/startserving/createRequest
+            /moqui-org/screen/moqui.org/startserving/createRequest
+            /webroot/moqui.org/startserving/createRequest
+            /apps/moqui.org/startserving/createRequest
+            component://moqui-org/screen/moqui.org/startserving/createRequest
+            /webroot/moqui-org/screen/moqui.org/startserving/createRequest
+            /StartServing/createRequest
+            /startserving/createRequest
+            /webroot/startserving/createRequest
+            /moqui.org/startserving/createRequest
+            /startserving/startserving/createRequest
+         --> 
+        <form method="post" action="/startserving/createRequest" class="startserving">
             <input type="hidden" id="redirect" name="redirect" value>
             <fieldset class="contact">
                 <legend>Contact Information</legend>
@@ -173,9 +197,9 @@
         </form>
         <script>
 
-            const currentURL = window.location.href.toString();
-            let redirectURL = currentURL.replace('startserving.html', 'startserving-thankyou.html');
-            document.getElementById('redirect').setAttribute('value', redirectURL);
+            // const currentURL = window.location.href.toString();
+            // let redirectURL = currentURL.replace('startserving.html', 'startserving-thankyou.html');
+            // document.getElementById('redirect').setAttribute('value', redirectURL);
 
             var wrapper = hyperform(window, {
                 preventImplicitSubmit: true

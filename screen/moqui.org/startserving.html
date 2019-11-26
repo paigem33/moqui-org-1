@@ -5,7 +5,14 @@
     <main class="main-content">
         <h1 class="page-heading">Start Serving</h1>
         <p class="startServingFormIntro">As Guru Nanak Dwara functions through the Seva (selfless service) efforts of the Sadh Sangat, please tell us how you’d like to contribute in your own unique way!</p>
-        <form method="post" action="/createRequest" class="startserving">
+        <!-- 
+            Paths tried:
+            /m/startserving/createRequest
+            /startserving/createRequest 
+            /moqui-org/startserving/createRequest
+            /apps/moqui-org/startserving/createRequest
+         -->
+        <form method="post" action="/apps/m/startserving/createRequest" class="startserving">
             <input type="hidden" id="redirect" name="redirect" value>
             <fieldset class="contact">
                 <legend>Contact Information</legend>

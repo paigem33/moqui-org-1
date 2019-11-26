@@ -3,6 +3,7 @@
                 <section class="footer-subscribe col-md-6">
                     <em>Subscribe to our mailing list</em>
                     <div id="mc_embed_signup">
+                    <#--  Refused to send form data to '<URL>' because it violates the following Content Security Policy directive: "form-action 'self'".  -->
                         <form action="https://gurunanakdwara.us15.list-manage.com/subscribe/post?u=ee82e1fff8069f58d7029d8fe&amp;id=8a4b08d5c6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                             <div id="mc_embed_signup_scroll">
                                 <div class="mc-field-group">

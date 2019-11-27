@@ -9,6 +9,7 @@
         <link href="/index.css" rel="stylesheet">
         <link href="/events.css" rel="stylesheet">
         <link href="/contact.css" rel="stylesheet">
+        <link href="/startserving.css" rel="stylesheet">
 
         <link rel="image_src" type="image/png" href="/images/gnd-image-src.png">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -16,11 +17,9 @@
         <meta property="og:image" content="/images/gnd-image-src.png">
         <meta name="twitter:image" content="/images/gnd-image-src.png"><!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-NRMZ36R');</script><!-- End Google Tag Manager -->
-  
+        <script src="js/hyperform.min.js"></script>
         </head>
-    <body><!-- Google Tag Manager (noscript) -->
-        <!--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRMZ36R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> --><!-- End Google Tag Manager (noscript) --
--->
+    <body>
         <header class="header" id="header">
             <div class="contact-links">
                 <div class="max-width">

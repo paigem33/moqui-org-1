@@ -8,7 +8,7 @@
      <artifactGroups artifactGroupId="moqui-org">
         <artifacts artifactName="component://moqui-org/screen/moqui.org/startserving*" artifactTypeEnumId="AT_XML_SCREEN_TRANS" inheritAuthz="Y" nameIsPattern="Y"/>
         <artifacts artifactName="component://moqui-org/screen/moqui.org/startserving.html.xml" artifactTypeEnumId="AT_XML_SCREEN" inheritAuthz="Y" nameIsPattern="N"/>
-        <artifacts artifactName="component://moqui-org/service/ServingServices.xml" artifactTypeEnumId="AT_SERVICE" inheritAuthz="Y" nameIsPattern="N"/>
+        <artifacts artifactName="component://moqui-org/service/StartServing.xml" artifactTypeEnumId="AT_SERVICE" inheritAuthz="Y" nameIsPattern="N"/>
     </artifactGroups>
 
     <!-- authz/permission for ALL users -->

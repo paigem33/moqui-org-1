@@ -20,6 +20,7 @@ along with this software (see the LICENSE.md file). If not, see
 
         <subscreens-active id="root-active"/>
 
-        <render-mode><text type="html" location="component://moqui-org/screen/moqui.org/includes/footer.html.ftl"/></render-mode>
+        <render-mode>
+        <text type="html" location="component://moqui-org/screen/moqui.org/includes/footer.html.ftl"/></render-mode>
     </widgets>
 </screen>

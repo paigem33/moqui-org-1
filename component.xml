@@ -3,6 +3,8 @@
         name="moqui-org" version="1.0.0">
     <depends-on name="HiveMind"/>
     <depends-on name="moqui-wikitext"/>
+    <depends-on name="mantle-udm" version="2.0.0"/>
+    <depends-on name="mantle-usl" version="2.0.0"/>
 </component>
 
 <!-- <component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/moqui-conf-2.1.xsd"

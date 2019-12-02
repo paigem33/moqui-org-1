@@ -5,10 +5,6 @@ body {
 	padding-top: 87px !important;
 }
 
-.vertical-navigator  ul.navigator-links li#startservingNavItem a.nav-link {
-	color: #60cbd7;
-}
-
 .splash-wrapper.ss {
 	height: 0;
 	padding-bottom: 41.39%; /* 149 divided by 360 */

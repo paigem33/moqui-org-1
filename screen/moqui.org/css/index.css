@@ -4,7 +4,8 @@ body  {
 	background: none;
 }
 
-.vertical-navigator  ul.navigator-links li#homeNavItem a.nav-link {
+/* Styles for active nav item */
+.active-item a.nav-link {
 	color: #60cbd7;
 }
 

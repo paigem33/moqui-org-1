@@ -5,6 +5,7 @@
             makeDefault="Y" noSubPath="Y" subscreenLocation="component://moqui-org/screen/moqui.org.xml"/>
     -->
 
+
     <!-- authz/permission for ALL users -->
     <moqui.security.ArtifactGroup artifactGroupId="MOQ_ORG" description="moqui.org app (via root screen)"/>
     <moqui.security.ArtifactGroupMember artifactGroupId="MOQ_ORG" artifactName="component://moqui-org/screen/moqui.org.xml"

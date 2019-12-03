@@ -6,11 +6,6 @@ body {
 	padding-top:87px;
 }
 
-.vertical-navigator ul.navigator-links li#eventsNavItem.active a.nav-link,
-.vertical-navigator ul.navigator-links li#calendarNavItem.active a.nav-link {
-	color: #60cbd7;
-}
-
 .fb-page {
 	display: block;
 	margin-left: auto;

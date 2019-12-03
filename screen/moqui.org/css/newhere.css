@@ -6,10 +6,6 @@ body {
 	background: none;
 }
 
-.vertical-navigator  ul.navigator-links li#newhereNavItem a.nav-link {
-	color: #60cbd7;
-}
-
 .splash-wrapper {
 	height: 0;
 	padding-bottom: 41.39%; /* 149 divided by 360 */

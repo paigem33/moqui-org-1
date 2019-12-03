@@ -54,7 +54,7 @@
                 <section div class="footer-connect col-md-6">
                     <em>Connect With Us</em>
                     <div class="flex">
-                        <a href="/donate.html" class="donate">Donate</a>
+                        <a href="/donateform.html" class="donate">Donate</a>
                         <a href="https://www.facebook.com/gurunanakdwara/" class="social-media" title="GND Facebook Page" target="_blank">
                             <i class="fab fa-facebook-square"></i>
                         </a>

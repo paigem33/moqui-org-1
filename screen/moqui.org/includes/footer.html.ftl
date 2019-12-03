@@ -110,6 +110,8 @@ if (window.matchMedia("(min-width: 768px)").matches) {
 				document.addEventListener('mousewheel', hideShowHeader);
 				document.addEventListener('DOMMouseScroll', hideShowHeader);
 			}
+
+            
 		</script>
         <script src="js/main.js"></script>
         

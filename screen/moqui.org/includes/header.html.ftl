@@ -55,32 +55,32 @@
                     </div>
                     <nav class="vertical-navigator" role="navigation" data-node-name="verticalNavigatorNode">
                         <ul class="navigator-links">
-                            <li id="homeNavItem">
+                            <li<#if menu_active! == "home"> class="active-item"</#if>>
                                 <a href="/" class="nav-link">
                                     <span>Home</span>
                                 </a>
                             </li>
-                            <li id="newhereNavItem">
+                            <li<#if menu_active! == "newhere"> class="active-item"</#if>>
                                 <a href="/newhere.html" class="nav-link">
                                     <span>New Here</span>
                                 </a>
                             </li>
-                            <li id="eventsNavItem">
+                            <li<#if menu_active! == "events"> class="active-item"</#if>>
                                 <a href="/events.html" class="nav-link">
                                     <span>Events</span>
                                 </a>
                             </li>
-                            <#--  <li id="calendarNavItem">
+                             <#--  <li id="calendarNavItem">
                                 <a href="/events.html#calendar" class="nav-link">
                                     <span>Calendar</span>
-                                </a>  -->
-                            </li>
-                            <li id="startservingNavItem">
+                                </a> 
+                            </li>  -->
+                            <li<#if menu_active! == "startserving"> class="active-item"</#if>>
                                 <a href="/startserving.html" class="nav-link">
                                     <span>Start Serving</span>
                                 </a>
                             </li>
-                            <li id="photosNavItem">
+                            <li<#if menu_active! == "photos"> class="active-item"</#if>>
                                 <a href="/photos.html" class="nav-link">
                                     <span>Photos</span>
                                 </a>

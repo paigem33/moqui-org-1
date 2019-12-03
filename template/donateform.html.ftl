@@ -1,7 +1,7 @@
 <div id="donateBody">
   <img class="headerImg" src="https://gurunanakdwara.com/img/donate1200x220.jpg"/>
   <div class="formContainer">
-        <form method="post" action="/moqui-org/startserving/createRequest" id="donateForm">
+        <form method="post" action="/moqui-org/donateform/createPerson" id="donateForm">
             <input type="hidden" id="redirect" name="redirect" value>
             <fieldset>
           <legend>Donation Amount</legend>

@@ -63,7 +63,7 @@ p.startServingFormIntro {
 	 text-align: center;
  }
 
-fieldset {
+ .ssForm fieldset {
 	background: white;
 	border-radius: 8px;
 	border: 1px solid #dadada;
@@ -73,7 +73,7 @@ fieldset {
 	position: relative
 }
 
-fieldset legend {
+.ssForm fieldset legend {
 	border-bottom: 1px solid #dedede;
 	color: #6a7899;
 	float: left;
@@ -94,7 +94,7 @@ fieldset .row.flex-required {
 	display: flex;
 }
 
-fieldset textarea {
+.ssForm fieldset textarea {
 	border-radius: 4px;
 	border: 1px solid #acacac;
 	color: black;
@@ -107,47 +107,47 @@ fieldset textarea {
 	width: 100%;
 }
 
-fieldset input,
+.ssForm fieldset input,
 	fieldset select{
 	min-height: 2em;
 }
 
-fieldset input,
+.ssForm fieldset input,
 	fieldset select,
 	fieldset textarea {
 	margin-bottom: 5px;
 	width: 100%;
 }
 
-fieldset input::placeholder,
+.ssForm fieldset input::placeholder,
 	fieldset textarea::placeholder{
 	color: #acacac;
 	opacity: 1;
 }
 
-fieldset select{
+.ssForm fieldset select{
 	font-weight: normal;
 	-webkit-appearance: none;
 }
 
-fieldset select option.type-of-q {
+.ssForm fieldset select option.type-of-q {
 	color: #000;
 	font-size: 14px;
 	padding: 0 0 5px;
 	line-height: 2em;
 }
 
-fieldset select.changed {
+.ssForm fieldset select.changed {
 	color: black;
 }
 
-fieldset textarea {
+.ssForm fieldset textarea {
 	height: 150px;
 	font-family: inherit;
 	color: black;
 }
 
-fieldset input,
+.ssForm fieldset input,
 	fieldset select,
 	fieldset textarea {
 	width: 100%;
@@ -159,7 +159,7 @@ fieldset input,
 	border-radius: 0.25rem;
 }
 
-fieldset button {
+.ssForm fieldset button {
 	background-color: #0076a2;
 	border: none;
 	color: white;
@@ -172,31 +172,31 @@ fieldset button {
 	text-transform: uppercase;
 }
 
-fieldset button:hover {
+.ssForm fieldset button:hover {
 	background-color: #ebebeb;
 	color: #0076a2;
 	cursor: pointer;
 }
 
-fieldset .hf-warning {
+.ssForm fieldset .hf-warning {
 	color: #ff2c34;
 	text-align: right;
 	font-size: 12px;
 	width: 100%;
 }
 
-fieldset input:focus,
+.ssForm fieldset input:focus,
 	fieldset select:focus {
 	border-color: #2dd0e8;
 }
 
-fieldset .error-box input.hf-invalid,
+.ssForm fieldset .error-box input.hf-invalid,
 		fieldset .error-box select.hf-invalid,
 		fieldset .error-box textarea.hf-invalid {
 	border-color: #ff2c34;
 }
 
-fieldset input:invalid,
+.ssForm fieldset input:invalid,
 	fieldset select:invalid,
 	fieldset textarea:invalid {
 	outline: none;
@@ -283,19 +283,19 @@ form.startserving button.clicked {
 
 /* form.startserving */
 
-fieldset.contact {
+.ssForm fieldset.contact {
 
 	padding: 0 1rem 2.5rem 1rem
 
 }
 
-fieldset.contact label {
+.ssForm fieldset.contact label {
 	color: #919191;
 	display: block;
 	margin-top: 1em;
 }
 
-fieldset.contact .col {
+.ssForm fieldset.contact .col {
 	padding-right: 0;
 	padding-left: 0;
 }

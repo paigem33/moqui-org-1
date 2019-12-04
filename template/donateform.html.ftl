@@ -26,7 +26,7 @@
 
               </div>
             </fieldset>
-            <fieldset class="contact">
+            <fieldset>
                 <legend>Contact Information</legend>
                 <div class="contact">
                     <div class="field-75">

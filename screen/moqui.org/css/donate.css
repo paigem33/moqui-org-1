@@ -159,6 +159,7 @@
   }
   #donateForm .contact select {
     height: 32px;
+    cursor: pointer;
   }
   #donateForm .contact label, #donateForm .card label {
     color: #919191;
@@ -197,6 +198,7 @@
   #donateForm button:hover {
     background: #ffdaa6;
     color: #f6914a;
+    cursor: pointer;
   }
   
   
@@ -231,7 +233,7 @@
     #donateForm .contact .field-25 {
       width: 23%;
     }
-    #donateForm > fieldset.contact > div > div:nth-child(2), #donateForm > fieldset.contact > div > div:nth-child(7) {
+    #donateForm > fieldset > div.contact > div:nth-child(2), #donateForm > fieldset > div.contact > div:nth-child(7) {
       padding-top: 4px;
     }
     #donateForm .card .field-33 {

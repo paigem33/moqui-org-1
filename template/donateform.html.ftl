@@ -26,7 +26,7 @@
 
               </div>
             </fieldset>
-            <fieldset class="contact">
+            <fieldset>
                 <legend>Contact Information</legend>
                 <div class="contact">
                     <div class="field-75">
@@ -160,4 +160,3 @@
       </div>
 </div>
 <#--  TODO: Fix spacing issue on contact legend  -->
-<#--  TODO: Fix spacing issue on M.I. and Apt fields  -->

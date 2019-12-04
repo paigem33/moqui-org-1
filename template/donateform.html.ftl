@@ -160,4 +160,3 @@
       </div>
 </div>
 <#--  TODO: Fix spacing issue on contact legend  -->
-<#--  TODO: Fix spacing issue on M.I. and Apt fields  -->

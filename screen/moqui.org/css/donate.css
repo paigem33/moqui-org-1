@@ -231,6 +231,9 @@
     #donateForm .contact .field-25 {
       width: 23%;
     }
+    #donateForm > fieldset.contact > div > div:nth-child(2), #donateForm > fieldset.contact > div > div:nth-child(7) {
+      padding-top: 4px;
+    }
     #donateForm .card .field-33 {
       width: 31%;
     }
